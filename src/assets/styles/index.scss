@@ -1,7 +1,7 @@
 @import "nav";
 
-
 #app {
+    // font-family: Yaldevi;
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -12,5 +12,11 @@
 .row {
     display: flex;
     align-items: center;
+    gap: 4px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
     gap: 4px;
 }

@@ -5,19 +5,58 @@ nav {
   background: #fff;
   color: #2c3e50;
 }
-nav a {
-  font-weight: 600;
-  color: #2c3e50;
-  text-decoration: none;
-}
-nav a.router-link-exact-active {
-  color: #D30516;
-}
-nav a:hover {
-  text-decoration: underline;
-}
 nav img {
   height: 50px;
+}
+
+.navigationRight {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  z-index: 100;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  font-size: 32px;
+  line-height: 42.11px;
+  text-align: right;
+  padding-right: 30px;
+  transition: width 0.3s;
+}
+.navigationRight.slideRight {
+  width: 0;
+}
+.navigationRight.slideRight .pagesNav {
+  visibility: hidden;
+}
+.navigationRight img {
+  width: 70%;
+  height: auto;
+}
+.navigationRight .menuBtn {
+  position: absolute;
+  left: -40px;
+  top: 20px;
+}
+.navigationRight .pagesNav a {
+  font-weight: 600;
+  background: transparent;
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 4px;
+}
+.navigationRight .pagesNav a.router-link-exact-active {
+  color: #D30516;
+}
+.navigationRight .pagesNav a:hover {
+  background: #2c3e50;
+  color: #fff;
+  transition: all 0.2s;
+  padding: 4px 16px;
 }
 
 #app {
@@ -31,5 +70,11 @@ nav img {
 .row {
   display: flex;
   align-items: center;
+  gap: 4px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
   gap: 4px;
 }/*# sourceMappingURL=index.css.map */
