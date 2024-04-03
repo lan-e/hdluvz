@@ -1,12 +1,14 @@
 nav {
-  display: flex;
-  align-items: center;
   padding: 30px;
   background: #fff;
   color: #2c3e50;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
 nav img {
   height: 50px;
+}
+nav .row {
+  align-items: center;
 }
 
 .navigationRight {
@@ -60,6 +62,84 @@ nav img {
   padding: 4px 16px;
 }
 
+.home {
+  position: relative;
+}
+.home .bg {
+  position: relative;
+}
+.home .bg img {
+  width: 100%;
+  height: 100%;
+}
+.home .bg .bgMask {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .overlayText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 100px;
+}
+.home .overlayText .red {
+  color: #D30516;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 24px;
+  gap: 16px;
+}
+.gallery img {
+  height: 400px;
+  width: auto;
+}
+
+.exhColumns {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 55%;
+  padding: 16px;
+}
+.exhColumns h3 {
+  text-align: left;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #D30516;
+  border-bottom: 3px solid #D30516;
+}
+
+.imgContainer {
+  width: 40%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.imgContainer img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.desc {
+  word-break: break-all;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -73,7 +153,6 @@ nav img {
 
 .row {
   display: flex;
-  align-items: center;
   gap: 4px;
 }
 

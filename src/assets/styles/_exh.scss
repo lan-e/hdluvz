@@ -1,0 +1,36 @@
+.exhColumns {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 55%;
+    padding: 16px;
+    
+    h3 {
+        text-align: left;
+        text-transform: uppercase;
+        padding: 10px;
+        color: #D30516;
+        border-bottom: 3px solid #D30516;
+    }
+}
+
+.imgContainer {
+    // @media #{$mobile}{
+    //     position: relative;
+    // }
+    width: 40%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.desc {
+    word-break: break-all;
+}

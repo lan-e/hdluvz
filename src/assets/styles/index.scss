@@ -1,4 +1,12 @@
+$mobile: "(max-width: 900px)";
 @import "nav";
+@import "home";
+@import "exh";
+
+body {
+    padding: 0;
+    margin: 0;
+}
 
 #app {
     // font-family: Yaldevi;
@@ -12,7 +20,6 @@
 
 .row {
     display: flex;
-    align-items: center;
     gap: 4px;
 }
 
