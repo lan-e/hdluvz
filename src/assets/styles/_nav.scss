@@ -1,12 +1,15 @@
 nav {
-    display: flex;
-    align-items: center;
     padding: 30px;
     background: #fff;
     color: #2c3e50;
+    box-shadow: 0px 0px 10px 0px #00000040;
 
     img {
         height: 50px;
+    }
+
+    .row {
+        align-items: center;
     }
 }
 
