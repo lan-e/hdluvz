@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: #fff;
+    color: #2c3e50;
+
+    a {
+        font-weight: 600;
+        color: #2c3e50;
+        text-decoration: none;
+
+        &.router-link-exact-active {
+            color: #D30516;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        height: 50px;
+    }
+}
