@@ -34,6 +34,13 @@ const routes = [
     component: function () {
       return import('../views/ContactView.vue')
     }
+  },
+  {
+    path: '/exh',
+    name: 'exh',
+    component: function () {
+      return import('../views/exhibitions/Exhibition.vue')
+    }
   }
 ]
 
