@@ -3,8 +3,8 @@
     <div class="bg">
       <img src="../assets/img/homebg.png" alt="">
       <div class="bgMask"></div>
+      <div class="overlayText"><span class="red">HDLU</span> VARAŽDIN</div>
     </div>
-    <div class="overlayText"><span class="red">HDLU</span> VARAŽDIN</div>
     <Gallery />
   </div>
 </template>
