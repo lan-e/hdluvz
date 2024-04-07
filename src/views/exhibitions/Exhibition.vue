@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="exhibitionDetails">
         <div class="exhColumns">
             <div class="desc">
                 <h3>Životopis</h3>

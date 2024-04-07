@@ -21,10 +21,15 @@
   
     .overlayText{
         position: absolute;
-        top: 0;
-        left: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
         font-size: 100px;
       
+        @media #{$mobile}{
+          font-size: 50px;
+        }
+
         .red {
           color: #D30516;
         }
