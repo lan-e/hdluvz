@@ -1,0 +1,62 @@
+html {
+	overflow-y: scroll;
+	height: fit-content;
+}
+
+html,
+body {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	transition: 0.3s;
+}
+
+//SCROLLBAR
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+
+	@media #{$mobile} {
+		display: none;
+	}
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--color1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--color5);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+#app {
+	// font-family: Yaldevi;
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-align: center;
+	color: #2c3e50;
+	user-select: none;
+}
+
+.row {
+	display: flex;
+	gap: 4px;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
