@@ -1,6 +1,5 @@
 <template>
-    <div class="about">
-      <h1>This is an organization page</h1>
-    </div>
-  </template>
-  
+  <div class="about">
+    <h1>{{ $t("orgPage") }}</h1>
+  </div>
+</template>

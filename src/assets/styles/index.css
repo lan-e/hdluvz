@@ -109,6 +109,7 @@ nav .row {
   text-align: right;
   padding-right: 30px;
   transition: 0.3s;
+  font-size: 24px;
 }
 .navigationRight.slideRight {
   right: -200px;
@@ -157,7 +158,9 @@ nav .row {
   background: transparent;
   color: var(--color3);
   text-decoration: none;
-  padding: 4px;
+  padding: 4px 10px;
+  text-align: left;
+  margin-bottom: 8px;
 }
 .navigationRight .pagesNav a.router-link-exact-active {
   color: #d30516;
