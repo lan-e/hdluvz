@@ -68,15 +68,26 @@ body {
           user-select: none;
 }
 
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color4);
+  color: var(--color3);
+  padding: 24px;
+}
+.page h1 {
+  margin-top: 0;
+}
+
 .row {
   display: flex;
-  gap: 4px;
+  gap: 8px;
 }
 
 .col {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 nav {
@@ -172,6 +183,10 @@ nav .row {
   padding: 4px 16px;
 }
 
+.switchlang a {
+  cursor: pointer;
+}
+
 .home {
   position: relative;
 }
@@ -247,8 +262,8 @@ nav .row {
   text-align: left;
   text-transform: uppercase;
   padding: 10px;
-  color: #D30516;
-  border-bottom: 3px solid #D30516;
+  color: #d30516;
+  border-bottom: 3px solid #d30516;
 }
 
 .imgContainer {
@@ -275,4 +290,37 @@ nav .row {
 
 .desc {
   word-break: break-all;
+}
+
+.posts {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 96px 48px;
+  background-color: var(--color4);
+  color: var(--color3);
+}
+.posts .post {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color1);
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 200px;
+}
+.posts .post .row {
+  align-items: center;
+}
+.posts .post img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.posts .post .name {
+  font-weight: bold;
+}
+.posts .post .content {
+  line-height: 150%;
 }/*# sourceMappingURL=index.css.map */
