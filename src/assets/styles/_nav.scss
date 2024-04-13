@@ -90,15 +90,21 @@ nav {
       margin-bottom: 8px;
 
       &.router-link-exact-active {
-        color: #d30516;
+        color: $red1;
       }
 
       &:hover {
-        background: #2c3e50;
-        color: #fff;
+        background: $blue1;
+        color: $white1;
         transition: all 0.2s;
         padding: 4px 16px;
       }
     }
+  }
+}
+
+.switchlang {
+  a {
+    cursor: pointer;
   }
 }
