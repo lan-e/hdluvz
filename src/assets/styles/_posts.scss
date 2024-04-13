@@ -7,6 +7,10 @@
   background-color: var(--color4);
   color: var(--color3);
 
+  @media #{$tablet} {
+    grid-template-columns: 1fr;
+  }
+
   .post {
     display: flex;
     flex-direction: column;

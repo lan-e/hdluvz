@@ -301,6 +301,11 @@ nav .row {
   background-color: var(--color4);
   color: var(--color3);
 }
+@media (max-width: 1200px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
 .posts .post {
   display: flex;
   flex-direction: column;
