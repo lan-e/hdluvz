@@ -1,26 +1,21 @@
 <template>
 	<nav class="navigation">
 		<div class="row">
-			<router-link to="/">
-				<img src="../assets/img/logo.png" alt="" />
-			</router-link>
-			Hrvatsko društvo likovnih umjetnika Varaždin
+			<Logo />
+			<h3>Hrvatsko društvo likovnih umjetnika Varaždin</h3>
 		</div>
 		<div class="navigationRight" :class="{ slideRight: isMenuOpen }">
 			<MenuBtn @click="isMenuOpen = !isMenuOpen" :isMenuOpen="isMenuOpen" />
-			<router-link to="/">
-				<img src="../assets/img/logo.png" alt="" />
-			</router-link>
+			<Logo />
 			<div class="pagesNav col">
-				<router-link to="/">Početna</router-link>
-				<router-link to="/organization">Ustroj</router-link>
-				<router-link to="/members">Članovi</router-link>
-				<router-link to="/archive">Arhiva</router-link>
-				<router-link to="/contact">Kontakt</router-link>
-				<div class="theme-switch-container">
-					<ThemeIcon :switchedTheme="switchedTheme" @click="switchTheme" />
-				</div>
+				<router-link to="/">{{ $t('home') }}</router-link>
+				<router-link to="/organization">{{ $t('org') }}</router-link>
+				<router-link to="/members">{{ $t("members") }}</router-link>
+				<router-link to="/archive">{{ $t("archive") }}</router-link>
+				<router-link to="/contact">{{ $t("contact") }}</router-link>
 			</div>
+			<LanguageSwitcher />
+			<ThemeIcon :switchedTheme="switchedTheme" @click="switchTheme" />
 		</div>
 	</nav>
 </template>
@@ -28,7 +23,9 @@
 <script setup>
 import { onBeforeMount, ref } from "vue";
 import MenuBtn from "./MenuBtn.vue";
-import ThemeIcon from "./icons/ThemeIcon.vue";
+import ThemeIcon from "./lang-theme/ThemeIcon.vue";
+import LanguageSwitcher from "./lang-theme/LanguageSwitcher.vue"
+import Logo from "./icons/Logo.vue";
 const isMenuOpen = ref(false);
 const switchedTheme = ref(true);
 
