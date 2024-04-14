@@ -1,14 +1,19 @@
 .posts {
   display: grid;
-  align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 96px 48px;
-  background-color: var(--color4);
-  color: var(--color3);
+  padding: 96px 15%;
+  gap: 32px;
 
   @media #{$tablet} {
     grid-template-columns: 1fr;
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    text-decoration: none;
+    color: var(--color3);
   }
 
   .post {
@@ -18,16 +23,14 @@
     box-shadow: 0px 4px 8px 0px #00000040;
     border-radius: 8px;
     padding: 16px;
-    min-height: 200px;
-
+    min-height: 150px;
+    img {
+      height: 200px !important;
+      width: 200px !important;
+      object-fit: contain;
+    }
     .row {
       align-items: center;
-    }
-
-    img {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
     }
 
     .name {

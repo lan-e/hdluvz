@@ -8,5 +8,7 @@
   "orgPage": "Organization",
   "membersPage": "Members",
   "archivePage": "Archive",
-  "contactPage": "Contact us"
+  "contactPage": "Contact us",
+  "events": "Latest events",
+  "all": "All exhibitions"
 }

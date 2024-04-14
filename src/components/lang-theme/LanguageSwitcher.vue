@@ -17,8 +17,8 @@ export default {
   data() {
     return {
       languages: {
-        en: { nativeName: 'English' },
-        hr: { nativeName: 'Hrvatski' }
+        en: { nativeName: 'en' },
+        hr: { nativeName: 'hr' }
       }
     }
   }

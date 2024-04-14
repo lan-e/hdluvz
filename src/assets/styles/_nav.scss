@@ -1,4 +1,7 @@
-nav {
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 30px;
   background: var(--color1);
   color: var(--color3);
@@ -23,7 +26,8 @@ nav {
   bottom: 0;
   height: 100%;
   width: 200px;
-  background-color: var(--color1);
+  background: var(--color1);
+  color: var(--color3);
   box-shadow: 0px 4px 4px 0px #00000040;
   font-size: 32px;
   line-height: 42.11px;
@@ -89,15 +93,20 @@ nav {
       text-align: left;
       margin-bottom: 8px;
 
-      &.router-link-exact-active {
-        color: $red1;
-      }
-
       &:hover {
         background: $blue1;
         color: $white1;
         transition: all 0.2s;
         padding: 4px 16px;
+      }
+
+      &.router-link-exact-active {
+        color: $red1;
+
+        &:hover {
+          background: none;
+          padding: 4px 10px;
+        }
       }
     }
   }

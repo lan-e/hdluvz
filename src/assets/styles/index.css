@@ -18,6 +18,12 @@ html {
   overflow-y: scroll;
   height: -moz-fit-content;
   height: fit-content;
+  background-color: var(--color4);
+  color: var(--color3);
+}
+
+h1 {
+  color: var(--color3);
 }
 
 html,
@@ -68,17 +74,6 @@ body {
           user-select: none;
 }
 
-.page {
-  width: 100%;
-  height: 100vh;
-  background-color: var(--color4);
-  color: var(--color3);
-  padding: 24px;
-}
-.page h1 {
-  margin-top: 0;
-}
-
 .row {
   display: flex;
   gap: 8px;
@@ -90,16 +85,19 @@ body {
   gap: 8px;
 }
 
-nav {
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 30px;
   background: var(--color1);
   color: var(--color3);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2509803922);
 }
-nav img {
+.navigation img {
   height: 50px;
 }
-nav .row {
+.navigation .row {
   align-items: center;
 }
 
@@ -113,7 +111,8 @@ nav .row {
   bottom: 0;
   height: 100%;
   width: 200px;
-  background-color: var(--color1);
+  background: var(--color1);
+  color: var(--color3);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   font-size: 32px;
   line-height: 42.11px;
@@ -173,14 +172,18 @@ nav .row {
   text-align: left;
   margin-bottom: 8px;
 }
-.navigationRight .pagesNav a.router-link-exact-active {
-  color: #d30516;
-}
 .navigationRight .pagesNav a:hover {
   background: #2c3e50;
   color: #fff;
   transition: all 0.2s;
   padding: 4px 16px;
+}
+.navigationRight .pagesNav a.router-link-exact-active {
+  color: #d30516;
+}
+.navigationRight .pagesNav a.router-link-exact-active:hover {
+  background: none;
+  padding: 4px 10px;
 }
 
 .switchlang a {
@@ -190,13 +193,20 @@ nav .row {
 .home {
   position: relative;
 }
+.home h1 {
+  margin-top: 48px;
+  margin-left: 10%;
+  text-align: left;
+}
 .home .bg {
   position: relative;
   background-color: var(--color4);
 }
 .home .bg img {
   width: 100%;
-  height: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .home .bg .bgMask {
   background-color: var(--color1);
@@ -208,20 +218,36 @@ nav .row {
   height: 100%;
 }
 .home .overlayText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 100px;
+  font-size: 18px;
   color: var(--color2);
 }
 @media (max-width: 700px) {
   .home .overlayText {
-    font-size: 50px;
+    font-size: 16px;
   }
 }
-.home .overlayText .red {
-  color: #d30516;
+.home .overlayText h4 {
+  margin: 0;
+}
+.home .overlayText .showMoreBtn {
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100px;
+}
+.home .overlayText .showMoreBtn:hover {
+  background: rgba(128, 128, 128, 0.322);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .gallery {
@@ -237,6 +263,16 @@ nav .row {
   width: auto;
 }
 
+.sliderIcons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.exhibitionDetails {
+  background-color: var(--color4);
+  color: var(--color3);
+}
 @media (max-width: 700px) {
   .exhibitionDetails {
     display: flex;
@@ -294,17 +330,21 @@ nav .row {
 
 .posts {
   display: grid;
-  align-items: center;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 96px 48px;
-  background-color: var(--color4);
-  color: var(--color3);
+  padding: 96px 15%;
+  gap: 32px;
 }
 @media (max-width: 1200px) {
   .posts {
     grid-template-columns: 1fr;
   }
+}
+.posts a,
+.posts a:visited,
+.posts a:hover {
+  text-decoration: none;
+  color: var(--color3);
 }
 .posts .post {
   display: flex;
@@ -313,15 +353,16 @@ nav .row {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 8px;
   padding: 16px;
-  min-height: 200px;
+  min-height: 150px;
+}
+.posts .post img {
+  height: 200px !important;
+  width: 200px !important;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .posts .post .row {
   align-items: center;
-}
-.posts .post img {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
 }
 .posts .post .name {
   font-weight: bold;

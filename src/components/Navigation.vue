@@ -1,9 +1,9 @@
 <template>
-	<nav class="navigation">
-		<div class="row">
+	<nav>
+		<!-- <div class="navigation">
 			<Logo />
 			<h3>Hrvatsko društvo likovnih umjetnika Varaždin</h3>
-		</div>
+		</div> -->
 		<div class="navigationRight" :class="{ slideRight: isMenuOpen }">
 			<MenuBtn @click="isMenuOpen = !isMenuOpen" :isMenuOpen="isMenuOpen" />
 			<Logo />

@@ -1,4 +1,7 @@
 .exhibitionDetails {
+  background-color: var(--color4);
+  color: var(--color3);
+
   @media #{$mobile} {
     display: flex;
     flex-direction: column;
