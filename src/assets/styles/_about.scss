@@ -1,0 +1,25 @@
+.about-container {
+  hr {
+    margin: 40px 80px;
+  }
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: var(--color2);
+  margin: 200px 25%;
+
+  @media #{$mobile} {
+    margin: 100px 10%;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+  }
+  h2 {
+    width: 120px;
+    text-transform: uppercase;
+  }
+}

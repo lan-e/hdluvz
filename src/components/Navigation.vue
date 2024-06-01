@@ -5,7 +5,7 @@
 			<h3>Hrvatsko društvo likovnih umjetnika Varaždin</h3>
 		</div> -->
 		<div class="navigationRight" :class="{ slideRight: isMenuOpen }">
-			<MenuBtn @click="isMenuOpen = !isMenuOpen" :isMenuOpen="isMenuOpen" />
+			<Button @click="isMenuOpen = !isMenuOpen" isMenuBtn="true" :isMenuOpen="isMenuOpen" />
 			<Logo />
 			<div class="pagesNav col">
 				<router-link to="/">{{ $t('home') }}</router-link>
@@ -22,7 +22,7 @@
 
 <script setup>
 import { onBeforeMount, ref } from "vue";
-import MenuBtn from "./MenuBtn.vue";
+import Button from "./icons/Button.vue";
 import ThemeIcon from "./lang-theme/ThemeIcon.vue";
 import LanguageSwitcher from "./lang-theme/LanguageSwitcher.vue"
 import Logo from "./icons/Logo.vue";

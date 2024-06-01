@@ -46,6 +46,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: initial;
+}
+
 #app {
   // font-family: Yaldevi;
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -65,4 +70,21 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.primary-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px 0px #0000004d;
+  background: #d30516;
+  font-size: 13px;
+
+  path {
+    fill: var(--color1);
+  }
 }

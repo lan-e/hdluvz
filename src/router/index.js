@@ -1,52 +1,59 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+import HomeView from "../views/HomeView.vue";
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: HomeView
+    path: "/",
+    name: "home",
+    component: HomeView,
   },
   {
-    path: '/organization',
-    name: 'organization',
+    path: "/organization",
+    name: "organization",
     component: function () {
-      return import('../views/OrganizationView.vue')
-    }
+      return import("../views/OrganizationView.vue");
+    },
   },
   {
-    path: '/members',
-    name: 'members',
+    path: "/about",
+    name: "about",
     component: function () {
-      return import('../views/MembersView.vue')
-    }
+      return import("../views/AboutView.vue");
+    },
   },
   {
-    path: '/archive',
-    name: 'archive',
+    path: "/members",
+    name: "members",
     component: function () {
-      return import('../views/ArchiveView.vue')
-    }
+      return import("../views/MembersView.vue");
+    },
   },
   {
-    path: '/contact',
-    name: 'contact',
+    path: "/archive",
+    name: "archive",
     component: function () {
-      return import('../views/ContactView.vue')
-    }
+      return import("../views/ArchiveView.vue");
+    },
   },
   {
-    path: '/exh',
-    name: 'exh',
+    path: "/contact",
+    name: "contact",
     component: function () {
-      return import('../views/exhibitions/Exhibition.vue')
-    }
-  }
-]
+      return import("../views/ContactView.vue");
+    },
+  },
+  {
+    path: "/exh",
+    name: "exh",
+    component: function () {
+      return import("../views/exhibitions/Exhibition.vue");
+    },
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

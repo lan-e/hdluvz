@@ -1,14 +1,17 @@
 <template>
-    <div class="posts">
-        <div v-for="post in posts" class="post">
-            <!-- <div class="row">
-                <img :src="post.author.avatar_URL" alt="">
-                <div class="name">{{ post.author.name }}</div>
-            </div> -->
-            <router-link to="/exh">
-                <h3>{{ post.title }}</h3>
-                <div class="content" v-html="removeTags(post.content)"></div>
-            </router-link>
+    <div class="posts-container">
+        <hr>
+        <div class="posts">
+            <div v-for="post in posts" class="post">
+                <!-- <div class="row">
+                    <img :src="post.author.avatar_URL" alt="">
+                    <div class="name">{{ post.author.name }}</div>
+                </div> -->
+                <router-link to="/exh">
+                    <h3>{{ post.title }}</h3>
+                    <div class="content" v-html="removeTags(post.content)"></div>
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
