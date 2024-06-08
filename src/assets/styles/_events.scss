@@ -1,10 +1,10 @@
-.posts-container {
+.events-container {
   hr {
     margin: 40px 80px;
   }
 }
 
-.posts {
+.events {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -22,7 +22,7 @@
     color: var(--color3);
   }
 
-  .post {
+  .event {
     display: flex;
     flex-direction: column;
     background-color: var(--color1);

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Yaldevi:wght@200..700&display=swap");
 [data-theme=light] {
   --color1: #fff;
   --color2: #292929;
@@ -29,6 +30,7 @@ h1 {
 html,
 body {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -69,7 +71,7 @@ a {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -204,7 +206,11 @@ a {
 }
 
 .switchlang a {
+  color: var(--color2);
   cursor: pointer;
+}
+.switchlang a:hover {
+  color: #d30516 !important;
 }
 
 .home {
@@ -294,70 +300,62 @@ a {
   gap: 8px;
 }
 
-.exhibitionDetails {
+.eventDetails {
   background-color: var(--color4);
   color: var(--color3);
+  padding: 16px;
 }
 @media (max-width: 700px) {
-  .exhibitionDetails {
+  .eventDetails {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 }
-
-.exhColumns {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  max-width: 55%;
-  padding: 16px;
-}
-@media (max-width: 700px) {
-  .exhColumns {
-    max-width: 80%;
-  }
-}
-.exhColumns h3 {
+.eventDetails .title {
   text-align: left;
   text-transform: uppercase;
   padding: 10px;
   color: #d30516;
   border-bottom: 3px solid #d30516;
 }
-
-.imgContainer {
+.eventDetails .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 55%;
+  word-break: break-all;
+}
+@media (max-width: 700px) {
+  .eventDetails .desc {
+    max-width: 80%;
+  }
+}
+.eventDetails .imgContainer {
   width: 40%;
   height: 100vh;
   position: fixed;
+  -o-object-fit: cover;
+     object-fit: cover;
   right: 0;
   top: 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 @media (max-width: 700px) {
-  .imgContainer {
+  .eventDetails .imgContainer {
     position: relative;
     width: 100%;
     height: 100%;
+    margin-top: 24px;
   }
 }
-.imgContainer img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
-.desc {
-  word-break: break-all;
-}
-
-.posts-container hr {
+.events-container hr {
   margin: 40px 80px;
 }
 
-.posts {
+.events {
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -365,17 +363,17 @@ a {
   gap: 32px;
 }
 @media (max-width: 1200px) {
-  .posts {
+  .events {
     grid-template-columns: 1fr;
   }
 }
-.posts a,
-.posts a:visited,
-.posts a:hover {
+.events a,
+.events a:visited,
+.events a:hover {
   text-decoration: none;
   color: var(--color3);
 }
-.posts .post {
+.events .event {
   display: flex;
   flex-direction: column;
   background-color: var(--color1);
@@ -384,19 +382,19 @@ a {
   padding: 16px;
   min-height: 150px;
 }
-.posts .post img {
+.events .event img {
   height: 200px !important;
   width: 200px !important;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.posts .post .row {
+.events .event .row {
   align-items: center;
 }
-.posts .post .name {
+.events .event .name {
   font-weight: bold;
 }
-.posts .post .content {
+.events .event .content {
   line-height: 150%;
 }
 
@@ -429,6 +427,10 @@ a {
   padding: 70px 120px;
   background: var(--color4);
   color: var(--color2);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 @media (max-width: 700px) {
   .footer-container {
@@ -471,13 +473,60 @@ a {
   border-radius: 4px;
 }
 .footer-container .info a:hover {
-  color: var(--color1);
+  color: var(--color2);
   background: #d30516;
   transition: all 0.2s;
 }
 
 .allrights {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #2c3e50;
   background: #d9d9d9;
   font-size: 16px;
   padding: 11px;
+}
+
+.page {
+  z-index: 99;
+  color: var(--color3);
+  text-align: left;
+  position: relative;
+  min-height: 100vh;
+}
+.page::after {
+  content: "";
+  display: block;
+  height: 498px;
+}
+
+.members-container {
+  padding: 24px 96px;
+}
+
+.archive-container {
+  padding: 24px 96px;
+}
+.archive-container ul {
+  list-style: none;
+}
+.archive-container .btns {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.archive-container .btns button {
+  cursor: pointer;
+  font-family: Yaldevi;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20px;
+  background: #d30516;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
 }/*# sourceMappingURL=index.css.map */

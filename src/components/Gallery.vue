@@ -3,14 +3,14 @@
         <div class="masonry-with-columns">
             <img src="../assets/img/exh4.png" alt="">
             <img src="../assets/img/exh3.png" alt="">
-            <router-link to="/exh">
+            <router-link to="/event">
                 <img src="../assets/img/exh2.png" alt="">
             </router-link>
             <img src="../assets/img/exh1.png" alt="">
             <img src="../assets/img/exh.png" alt="">
             <img src="../assets/img/exh4.png" alt="">
             <img src="../assets/img/exh3.png" alt="">
-            <router-link to="/exh">
+            <router-link to="/event">
                 <img src="../assets/img/exh2.png" alt="">
             </router-link>
             <img src="../assets/img/exh1.png" alt="">

@@ -2,17 +2,19 @@
   <div class="home">
     <HeroImg />
     <!-- <h1>{{ $t("events") }}</h1> -->
-    <Posts />
+    <Events />
     <About />
     <!-- <h1>{{ $t("all") }}</h1> -->
     <Gallery />
-    <Footer />
+    <div id="contact">
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script setup>
 import HeroImg from '@/components/HeroImg.vue';
-import Posts from '@/components/Posts.vue';
+import Events from '@/components/Events.vue';
 import About from '@/components/About.vue';
 import Gallery from '@/components/Gallery.vue';
 import Footer from '@/components/Footer.vue';

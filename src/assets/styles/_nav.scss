@@ -111,6 +111,11 @@
 
 .switchlang {
   a {
+    color: var(--color2);
     cursor: pointer;
+
+    &:hover {
+      color: $red1 !important;
+    }
   }
 }

@@ -3,7 +3,7 @@
         <hr>
         <div class="about">
             <div class="col">
-                <h2>O nama</h2>
+                <h2>{{ $t("aboutPage") }}</h2>
                 <router-link to="/about">
                     <Button />
                 </router-link>

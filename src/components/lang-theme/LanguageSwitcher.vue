@@ -1,7 +1,7 @@
 <template>
   <div v-if="languages" class="switchlang">
     <span v-for="(lng, index) in Object.keys(languages)" :key="lng">
-      <a v-if="$i18next.resolvedLanguage !== lng" v-on:click="$i18next.changeLanguage(lng)">
+      <a v-if="$i18next.resolvedLanguage !== lng" @click="changeLanguage(lng)">
         {{ languages[lng].nativeName }}
       </a>
       <strong v-if="$i18next.resolvedLanguage === lng">
@@ -12,15 +12,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      languages: {
-        en: { nativeName: 'en' },
-        hr: { nativeName: 'hr' }
-      }
-    }
-  }
+<script setup>
+import i18next from "i18next"
+
+const languages = {
+  en: { nativeName: 'en' },
+  hr: { nativeName: 'hr' }
+};
+
+function changeLanguage(lng) {
+  i18next.changeLanguage(lng);
+  localStorage.setItem('i18nextLng', lng);
+  window.dispatchEvent(new Event('languageChange'));
 }
 </script>

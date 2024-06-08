@@ -12,7 +12,7 @@
 				<router-link to="/organization">{{ $t('org') }}</router-link>
 				<router-link to="/members">{{ $t("members") }}</router-link>
 				<router-link to="/archive">{{ $t("archive") }}</router-link>
-				<router-link to="/contact">{{ $t("contact") }}</router-link>
+				<a href="#contact">{{ $t("contact") }}</a>
 			</div>
 			<LanguageSwitcher />
 			<ThemeIcon :switchedTheme="switchedTheme" @click="switchTheme" />

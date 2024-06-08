@@ -4,49 +4,45 @@ import HomeView from "../views/HomeView.vue";
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "HomeView",
     component: HomeView,
   },
   {
     path: "/organization",
-    name: "organization",
+    name: "OrganizationView",
     component: function () {
       return import("../views/OrganizationView.vue");
     },
   },
   {
     path: "/about",
-    name: "about",
+    name: "AboutView",
     component: function () {
       return import("../views/AboutView.vue");
     },
   },
   {
     path: "/members",
-    name: "members",
+    name: "MembersView",
     component: function () {
       return import("../views/MembersView.vue");
     },
   },
   {
     path: "/archive",
-    name: "archive",
+    name: "ArchiveView",
     component: function () {
       return import("../views/ArchiveView.vue");
     },
   },
   {
-    path: "/contact",
-    name: "contact",
+    path: "/event/:id",
+    name: "EventDetails",
+    props: (route) => ({
+      id: route.params.id,
+    }),
     component: function () {
-      return import("../views/ContactView.vue");
-    },
-  },
-  {
-    path: "/exh",
-    name: "exh",
-    component: function () {
-      return import("../views/exhibitions/Exhibition.vue");
+      return import("../views/events/EventDetails.vue");
     },
   },
 ];
