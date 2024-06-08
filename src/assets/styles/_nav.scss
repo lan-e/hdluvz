@@ -17,6 +17,7 @@
 }
 
 .navigationRight {
+  font-family: Yaldevi;
   position: fixed;
   display: flex;
   justify-content: space-around;
@@ -82,7 +83,7 @@
 
   .pagesNav {
     a {
-      font-weight: 600;
+      font-weight: 500;
       background: transparent;
       color: var(--color3);
       text-decoration: none;

@@ -1,8 +1,8 @@
 <template>
     <div class="page">
-        <h1>{{ $t("aboutPage") }}</h1>
         <div class="about-container">
-            <h3>Svoje ciljeve HDLU Varaždin ostvaruje na području kulture, a to su:</h3>
+            <h1>{{ $t("aboutPage") }}</h1>
+            <h4>Svoje ciljeve HDLU Varaždin ostvaruje na području kulture, a to su:</h4>
             <ul>
                 <li>zaštita i promicanje zajedničkih kulturnih i strukovnih interesa članstva</li>
                 <li>podržavanje i zaštita likovnog i multimedijalnog rada svojih članova i prezentacije njihove recentne
@@ -32,7 +32,9 @@
                 <li>povećanje publike i razvijanje tržišta umjetnina</li>
             </ul>
         </div>
-        <Footer />
+        <div id="contact">
+            <Footer />
+        </div>
     </div>
 </template>
 

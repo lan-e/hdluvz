@@ -1,5 +1,4 @@
 .page {
-  z-index: 99;
   color: var(--color3);
   text-align: left;
   position: relative;
@@ -10,6 +9,10 @@
     display: block;
     height: 498px;
   }
+}
+
+.organization-container {
+  padding: 24px 96px;
 }
 
 .members-container {
@@ -41,4 +44,8 @@
       padding: 8px 16px;
     }
   }
+}
+
+.about-container {
+  padding: 24px 96px;
 }

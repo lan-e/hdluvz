@@ -1,12 +1,14 @@
 <template>
-  <div v-if="!isLoaded">
-    <Loader />
-  </div>
-  <div v-else class="page">
+  <div class="page">
     <div class="members-container">
       <h1>{{ $t("membersPage") }}</h1>
-      <div v-for="member in members" :key="member.value.id" class="members">
-        <h3>{{ member.value.title.rendered }}</h3>
+      <div v-if="!isLoaded">
+        <Loader />
+      </div>
+      <div v-else>
+        <div v-for="member in members" :key="member.value.id" class="members">
+          <h3>{{ member.value.title.rendered }}</h3>
+        </div>
       </div>
     </div>
     <div id="contact">
