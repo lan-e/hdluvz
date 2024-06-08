@@ -4,10 +4,15 @@
         <div class="footer">
             <Logo />
             <div class="info">
-                <div>
+                <div v-if="currentLanguage === 'hr'">
                     <b>Radno vrijeme</b>
                     <div>pon-pet: 10-12, 18-20</div>
                     <div>sub, ned: 10-12</div>
+                </div>
+                <div v-else>
+                    <b>Working hours</b>
+                    <div>mon-fri: 10-12, 18-20</div>
+                    <div>sat, sun: 10-12</div>
                 </div>
                 <div class="numbers">
                     <div><a href="tel:0951995209" target="_blank">095 199 5209</a></div>
@@ -25,10 +30,28 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
-    <div class="allrights">HDLU Varaždin © Sva prava pridržana.</div>
+    <div class="allrights">HDLU Varaždin ©
+        <span v-if="currentLanguage === 'hr'">Sva prava pridržana.</span>
+        <span v-else>All rights reserved.</span>
+    </div>
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from "vue"
 import Logo from './icons/Logo.vue';
+import i18next from "i18next";
 
+const currentLanguage = ref(localStorage.getItem("i18nextLng"));
+
+onMounted(() => {
+    window.addEventListener('languageChange', onLanguageChange);
+});
+
+onUnmounted(() => {
+    window.removeEventListener('languageChange', onLanguageChange);
+});
+
+function onLanguageChange() {
+    currentLanguage.value = localStorage.getItem('i18nextLng');
+}
 </script>

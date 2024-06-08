@@ -3,7 +3,7 @@
         <div v-if="slider === 1" class="bg">
             <img src="@/assets/img/homebg.png" alt="">
             <div class="bgMask"></div>
-            <div class="overlayText">
+            <div v-if="currentLanguage === 'hr'" class="overlayText">
                 <h4>DANAS</h4>
                 Hrvatsko društvo likovnih umjetnika Varaždin strukovna je udruga likovnih umjetnika na području
                 Varaždinske županije. Udruga broji 25 redovitih članova od kojih 15 ima likovnu akademsku naobrazbu
@@ -11,19 +11,33 @@
                 usmjerenja, a ostalo su likovni autodidaki koji su dugogodišnjim radom i dostignutom razinom zadovoljili
                 kriterije prijama u Društvo.
             </div>
+            <div v-else class="overlayText">
+                <h4>TODAY</h4>
+                Croatian Society of Fine Artists Varaždin is a professional association of fine artists in the area
+                Varaždin County. The association has 25 regular members, 15 of whom have an art academic education
+                (academic painter, sculptor, graphic artist, professor of fine arts), two have graduated from a high
+                school of fine arts
+                directions, and the rest are self-taught art students who have satisfied themselves with many years of
+                work and the level they have reached
+                criteria for admission to the Society.
+            </div>
         </div>
         <div v-else class="bg">
             <img src="@/assets/img/nekad.jpg" alt="">
             <div class="bgMask"></div>
-            <div class="overlayText">
+            <div v-if="currentLanguage === 'hr'" class="overlayText">
                 <h4>NEKAD</h4>
-                Galerijski prostor u nekoj sredini pruža mogućnost uvida u aktualna događanja u likovnoj umjetnosti, a
-                samim
-                tim i nastajanje umjetnika. HDLU Varaždin je rijetka strukovna udruga kod nas, koja još uvijek nema svoj
-                izložbeni prostor i kao predvodnik suvremenosti ne moće u pravoj mjeri pokazati aktivnost svojih
-                članova,
-                niti svjetski trend.
-                <div class="showMoreBtn">...više</div>
+                Galerijski prostor u nekoj sredini pruža mogućnost uvida u aktualna događanja u likovnoj umjetnosti,
+                a samim tim i nastajanje umjetnika. HDLU Varaždin je rijetka strukovna udruga kod nas, koja još uvijek
+                nema svoj izložbeni prostor i kao predvodnik suvremenosti ne može u pravoj mjeri pokazati aktivnost
+                svojih članova, niti svjetski trend.
+            </div>
+            <div v-else class="overlayText">
+                <h4>BEFORE</h4>
+                The gallery space in a certain environment offers the possibility of insight into current events in the
+                fine arts, and alone team and emerging artists. HDLU Varaždin is a rare professional association in our
+                country, which still does not have its exhibition space and as a leader of modernity cannot show
+                its activity to the right extent, nor a world trend.
             </div>
         </div>
         <div class="sliderIcons">
@@ -38,8 +52,22 @@
 </template>
 
 <script setup>
-import { ref } from "vue"
+import { ref, onMounted, onUnmounted } from "vue"
 import Slider from "@/components/icons/Slider.vue"
+import i18next from "i18next";
 
 const slider = ref(1)
+const currentLanguage = ref(localStorage.getItem("i18nextLng"));
+
+onMounted(() => {
+    window.addEventListener('languageChange', onLanguageChange);
+});
+
+onUnmounted(() => {
+    window.removeEventListener('languageChange', onLanguageChange);
+});
+
+function onLanguageChange() {
+    currentLanguage.value = localStorage.getItem('i18nextLng');
+}
 </script>
