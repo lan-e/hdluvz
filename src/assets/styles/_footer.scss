@@ -20,6 +20,11 @@
     margin-bottom: 48px;
   }
 
+  iframe {
+    width: 100%;
+    min-width: 300px;
+  }
+
   .footer {
     display: flex;
     justify-content: center;

@@ -13,6 +13,7 @@ const { active } = defineProps(["active"])
 
 <style scoped>
 svg {
+    margin-bottom: 8px;
     cursor: pointer;
     height: 32px;
     fill: var(--color3);

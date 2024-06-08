@@ -6,6 +6,11 @@
   background: var(--color1);
   color: var(--color3);
   box-shadow: 0px 0px 10px 0px #00000040;
+  height: 50px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  transition: 0.3s all ease-in-out;
 
   img {
     height: 50px;
@@ -47,10 +52,6 @@
 
     .menuBtn {
       left: -60px;
-
-      @media #{$mobile} {
-        left: -35px;
-      }
     }
   }
 
@@ -64,10 +65,6 @@
     position: absolute;
     left: calc(-85px / 2);
     top: 20px;
-
-    @media #{$mobile} {
-      left: -25px;
-    }
 
     svg {
       path {

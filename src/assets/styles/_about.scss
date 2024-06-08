@@ -1,6 +1,6 @@
 .about-container {
   hr {
-    margin: 40px 80px;
+    margin: 40px;
   }
 }
 .about {
@@ -8,9 +8,11 @@
   align-items: center;
   gap: 24px;
   color: var(--color2);
-  margin: 200px 25%;
+  margin: 200px 20%;
 
   @media #{$mobile} {
+    flex-direction: column;
+    gap: 48px;
     margin: 100px 10%;
   }
 
