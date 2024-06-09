@@ -1,0 +1,28 @@
+.gallery-container {
+  width: 100%;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 498px;
+  }
+
+  .masonry-with-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: max-content;
+    gap: 24px;
+
+    img {
+      width: 600px;
+      object-fit: cover;
+      height: 100%;
+
+      @media #{$mobile} {
+        width: 300px;
+      }
+    }
+  }
+}

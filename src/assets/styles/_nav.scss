@@ -5,12 +5,25 @@
   padding: 30px;
   background: var(--color1);
   color: var(--color3);
-  box-shadow: 0px 0px 10px 0px #00000040;
   height: 50px;
   position: fixed;
+  top: 0;
   z-index: 99;
   width: 100%;
-  transition: 0.3s all ease-in-out;
+  transition: 0.3s top ease-in-out;
+  font-family: Yaldevi;
+
+  h3 {
+    font-weight: 500;
+
+    @media #{$mobile} {
+      font-size: 12px;
+    }
+  }
+
+  &.moveUp {
+    top: -70px;
+  }
 
   img {
     height: 50px;

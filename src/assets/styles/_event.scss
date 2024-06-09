@@ -2,6 +2,7 @@
   background-color: var(--color4);
   color: var(--color3);
   padding: 16px;
+  padding-top: 50px;
 
   @media #{$mobile} {
     display: flex;

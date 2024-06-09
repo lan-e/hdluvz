@@ -1,8 +1,16 @@
 .about-container {
+  text-align: justify;
+  font-size: 20px;
+
+  @media #{$mobile} {
+    font-size: 16px;
+  }
+
   hr {
     margin: 40px;
   }
 }
+
 .about {
   display: flex;
   align-items: center;
@@ -19,9 +27,13 @@
   .col {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
+
   h2 {
-    width: 120px;
+    text-align: center;
+    width: 150px;
     text-transform: uppercase;
+    font-family: "Playfair Display";
   }
 }

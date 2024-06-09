@@ -1,20 +1,24 @@
 <template>
     <div class="gallery-container">
-        <div class="masonry-with-columns">
-            <img src="../assets/img/exh4.png" alt="">
-            <img src="../assets/img/exh3.png" alt="">
-            <router-link to="/event">
-                <img src="../assets/img/exh2.png" alt="">
-            </router-link>
-            <img src="../assets/img/exh1.png" alt="">
-            <img src="../assets/img/exh.png" alt="">
-            <img src="../assets/img/exh4.png" alt="">
-            <img src="../assets/img/exh3.png" alt="">
-            <router-link to="/event">
-                <img src="../assets/img/exh2.png" alt="">
-            </router-link>
-            <img src="../assets/img/exh1.png" alt="">
-            <img src="../assets/img/exh.png" alt="">
+        <div v-if="!isLoaded">
+            <Loader />
+        </div>
+        <div v-else class="masonry-with-columns">
+            <div v-for="event in filteredEvents" :key="event.value.id" class="event">
+                <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
+                    <img :src="event.value.acf.poster.link" alt="Poster Image">
+                </router-link>
+            </div>
+            <div v-for="event in filteredEvents" :key="event.value.id" class="event">
+                <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
+                    <img :src="event.value.acf.poster.link" alt="Poster Image">
+                </router-link>
+            </div>
+            <div v-for="event in filteredEvents" :key="event.value.id" class="event">
+                <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
+                    <img :src="event.value.acf.poster.link" alt="Poster Image">
+                </router-link>
+            </div>
         </div>
     </div>
     <!-- <masonry-wall :items="items" :ssr-columns="3" :column-width="300" :gap="16">
@@ -29,31 +33,38 @@
 </template>
 
 <script setup>
-</script>
+import { ref, onMounted, computed, onUnmounted } from 'vue';
+import Loader from "@/components/icons/Loader.vue"
 
-<style lang="scss">
-.gallery-container {
-    width: 100%;
+const isLoaded = ref(false)
+let events = ref([]);
+const currentLanguage = ref(localStorage.getItem("i18nextLng"));
 
-    .masonry-with-columns {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        gap: 15px;
-        height: max-content;
-
-        img {
-            width: calc(100% / 3 - 30px);
-            background: #EC985A;
-            color: white;
-            text-align: center;
-            font-family: system-ui;
-            font-weight: 900;
-            font-size: 2rem;
-            object-fit: cover;
-            min-height: 200px;
-            height: 100%;
-        }
-    }
+async function fetchData() {
+    const data = await fetch("http://localhost/hdlu/wp-json/wp/v2/events");
+    const response = await data.json();
+    events.value = response.map(resp => ({ value: resp }));
+    isLoaded.value = true;
 }
-</style>
+
+const filteredEvents = computed(() => {
+    if (currentLanguage.value === 'en') {
+        return events.value.filter(event => event.value.link.includes('/hdlu/en/event'));
+    } else {
+        return events.value.filter(event => event.value.link.includes('/hdlu/event'));
+    }
+});
+
+onMounted(() => {
+    fetchData();
+    window.addEventListener('languageChange', onLanguageChange);
+});
+
+onUnmounted(() => {
+    window.removeEventListener('languageChange', onLanguageChange);
+});
+
+function onLanguageChange() {
+    currentLanguage.value = localStorage.getItem('i18nextLng');
+}
+</script>

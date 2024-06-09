@@ -1,6 +1,6 @@
 <template>
 	<nav>
-		<div :style="{ visibility: !isMenuOpen ? 'hidden' : 'visible' }" class="navigation">
+		<div :class="{ moveUp: !isMenuOpen }" class="navigation">
 			<Logo />
 			<h3>Hrvatsko društvo likovnih umjetnika Varaždin</h3>
 		</div>

@@ -25,7 +25,7 @@
                 </div>
             </div>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.4642025942076!2d16.332653019684063!3d46.30952391169757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4768abb7cc429c87%3A0x1c055b0a3c2a8347!2sGalerija%20HDLU%20Vara%C5%BEdin!5e1!3m2!1shr!2shr!4v1717278451545!5m2!1shr!2shr"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1338.7775656091676!2d16.334517867975244!3d46.30957231279621!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4768abb7cc429c87%3A0x1c055b0a3c2a8347!2sGalerija%20HDLU%20Vara%C5%BEdin!5e0!3m2!1shr!2shr!4v1717924431597!5m2!1shr!2shr"
                 width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
