@@ -8,20 +8,25 @@
   }
 
   .masonry-with-columns {
+    margin: 0 20%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     height: max-content;
     gap: 24px;
 
+    @media #{$mobile} {
+      margin: 0 5%;
+    }
+
     img {
-      width: 600px;
+      width: 300px;
       object-fit: cover;
       height: 100%;
 
       @media #{$mobile} {
-        width: 300px;
+        margin: 0;
+        width: 200px;
       }
     }
   }

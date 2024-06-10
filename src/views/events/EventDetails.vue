@@ -4,8 +4,8 @@
     </div>
     <div class="eventDetails" v-else>
         <h1 class="title">{{ event.title?.rendered }}</h1>
-        <div class="desc" v-html="event.content.rendered"></div>
-        <img class="imgContainer" :src="event.acf?.poster?.link" alt="Event Image">
+        <div class="desc" v-html="event.acf.content"></div>
+        <img class="imgContainer" :src="event.acf?.image" alt="Event Image">
     </div>
 </template>
 

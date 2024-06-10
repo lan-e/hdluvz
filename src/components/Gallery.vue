@@ -6,17 +6,17 @@
         <div v-else class="masonry-with-columns">
             <div v-for="event in filteredEvents" :key="event.value.id" class="event">
                 <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
-                    <img :src="event.value.acf.poster.link" alt="Poster Image">
+                    <img :src="event.value.acf.image" alt="">
                 </router-link>
             </div>
             <div v-for="event in filteredEvents" :key="event.value.id" class="event">
                 <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
-                    <img :src="event.value.acf.poster.link" alt="Poster Image">
+                    <img :src="event.value.acf.image" alt="">
                 </router-link>
             </div>
             <div v-for="event in filteredEvents" :key="event.value.id" class="event">
                 <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
-                    <img :src="event.value.acf.poster.link" alt="Poster Image">
+                    <img :src="event.value.acf.image" alt="">
                 </router-link>
             </div>
         </div>

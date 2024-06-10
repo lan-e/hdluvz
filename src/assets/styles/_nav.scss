@@ -1,19 +1,22 @@
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 8px;
   padding: 30px;
   background: var(--color1);
   color: var(--color3);
   height: 50px;
   position: fixed;
-  top: 0;
-  z-index: 99;
+  z-index: 100;
   width: 100%;
   transition: 0.3s top ease-in-out;
   font-family: Yaldevi;
+  height: 200px;
+  padding: 30px 10%;
 
   h3 {
+    margin: 0;
     font-weight: 500;
 
     @media #{$mobile} {
@@ -21,12 +24,48 @@
     }
   }
 
-  &.moveUp {
-    top: -70px;
+  &.navbar-scrolled {
+    top: -140px;
+    padding: 16px 10%;
+
+    h3 {
+      padding-top: 32px;
+    }
+    // h3 {
+    //   margin-top: 36px;
+    // }
+    // .right {
+    //   margin-bottom: 16px;
+    // }
   }
 
+  @media #{$mobile} {
+    display: none;
+  }
+
+  .left {
+    align-items: flex-start;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    height: 100%;
+  }
+
+  // &.moveUp {
+  //   top: -70px;
+  // }
+
   img {
-    height: 50px;
+    height: 100px;
   }
 
   .row {
@@ -37,7 +76,7 @@
 .navigationRight {
   font-family: Yaldevi;
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: space-around;
   flex-direction: column;
   z-index: 100;
@@ -54,6 +93,10 @@
   padding-right: 30px;
   transition: 0.3s;
   font-size: 24px;
+
+  @media #{$mobile} {
+    display: flex;
+  }
 
   &.slideRight {
     //width: 0;
@@ -90,37 +133,43 @@
       }
     }
   }
+}
 
-  .pagesNav {
-    a {
-      font-weight: 500;
-      background: transparent;
+.pagesNav {
+  display: flex;
+  gap: 24px;
+  height: 24px;
+
+  a {
+    font-weight: 500;
+    background: transparent;
+    color: var(--color3);
+    opacity: 0.4;
+    text-decoration: none;
+    text-align: left;
+    margin-bottom: 8px;
+
+    &:hover {
+      transition: all 0.2s;
       color: var(--color3);
-      text-decoration: none;
-      padding: 4px 10px;
-      text-align: left;
-      margin-bottom: 8px;
+      padding-bottom: 8px;
+    }
+
+    &.router-link-exact-active {
+      color: var(--color3);
+      opacity: 1;
 
       &:hover {
-        background: $blue1;
-        color: $white1;
-        transition: all 0.2s;
-        padding: 4px 16px;
-      }
-
-      &.router-link-exact-active {
-        color: $red1;
-
-        &:hover {
-          background: none;
-          padding: 4px 10px;
-        }
+        background: none;
       }
     }
   }
 }
 
 .switchlang {
+  display: flex;
+  gap: 8px;
+
   a {
     color: var(--color2);
     cursor: pointer;

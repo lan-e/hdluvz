@@ -7,7 +7,6 @@
       <strong v-if="$i18next.resolvedLanguage === lng">
         {{ languages[lng].nativeName }}
       </strong>
-      <span v-if="index < (Object.keys(languages).length - 1)">&nbsp;|&nbsp;</span>
     </span>
   </div>
 </template>
@@ -16,8 +15,8 @@
 import i18next from "i18next"
 
 const languages = {
-  en: { nativeName: 'en' },
-  hr: { nativeName: 'hr' }
+  en: { nativeName: 'English' },
+  hr: { nativeName: 'Hrvatski' }
 };
 
 function changeLanguage(lng) {

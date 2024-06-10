@@ -7,9 +7,9 @@
         <div v-else class="events">
             <div v-for="event in filteredEvents" :key="event.value.id" class="event">
                 <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
-                    <img :src="event.value.acf.poster.link" alt="Poster Image">
-                    <h3>{{ event.value.title.rendered }}</h3>
-                    <h3>{{ event.value.acf.date }}</h3>
+                    <img :src="event.value.acf.image" alt="Poster Image">
+                    <h3>{{ event.value.acf.title }}</h3>
+                    <h3>{{ event.value.acf.from_to }}</h3>
                 </router-link>
             </div>
         </div>

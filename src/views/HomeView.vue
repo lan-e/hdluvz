@@ -1,11 +1,10 @@
 <template>
   <div class="home">
     <HeroImg />
-    <!-- <h1>{{ $t("events") }}</h1> -->
-    <Events />
-    <About />
-    <!-- <h1>{{ $t("all") }}</h1> -->
+    <!-- <Events /> -->
+    <h1>{{ $t("events") }}</h1>
     <Gallery />
+    <!-- <About /> -->
     <div id="contact">
       <Footer />
     </div>
