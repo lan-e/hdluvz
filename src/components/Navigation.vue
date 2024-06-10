@@ -47,10 +47,10 @@ const switchedTheme = ref(true);
 const homeNav = ref(null)
 
 function updateScroll() {
-	if (window.scrollY >= 850) {
-		homeNav.value.classList.add("navbar-scrolled");
+	if (window.scrollY >= 500) {
+		homeNav?.value.classList.add("navbar-scrolled");
 	} else {
-		homeNav.value.classList.remove("navbar-scrolled");
+		homeNav?.value.classList.remove("navbar-scrolled");
 	}
 }
 

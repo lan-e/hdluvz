@@ -16,7 +16,7 @@
     }
 
     .bgMask {
-      background-color: var(--color1);
+      background: var(--color1);
       opacity: 0.5;
       position: absolute;
       top: 0;
@@ -27,11 +27,15 @@
 
     .bgMaskMsg {
       position: absolute;
-      background: #fff;
+      background: var(--color1);
       opacity: 0.8;
       height: 200px;
       width: 100%;
       bottom: 0;
+
+      @media #{$mobile} {
+        height: 100%;
+      }
     }
   }
 

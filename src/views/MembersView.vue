@@ -7,7 +7,7 @@
       </div>
       <div v-else>
         <div v-for="member in members" :key="member.value.id" class="members">
-          <h3>{{ member.value.title.rendered }}</h3>
+          <div>{{ member.value.title.rendered }}</div>
         </div>
       </div>
     </div>

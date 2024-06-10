@@ -171,11 +171,13 @@
   gap: 8px;
 
   a {
-    color: var(--color2);
+    color: var(--color3);
+    opacity: 0.4;
     cursor: pointer;
 
     &:hover {
-      color: $red1 !important;
+      color: var(--color2);
+      opacity: 1;
     }
   }
 }
