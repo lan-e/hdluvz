@@ -62,6 +62,11 @@ function switchTheme() {
 		document.documentElement.setAttribute("data-theme", "light");
 		localStorage.darkMode = "disabled";
 	}
+	window.dispatchEvent(new CustomEvent('darkMode-localstorage-changed', {
+		detail: {
+			storage: localStorage.getItem('darkMode')
+		}
+	}));
 	switchedTheme.value = !switchedTheme.value;
 }
 

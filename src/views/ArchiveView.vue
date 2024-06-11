@@ -2,40 +2,12 @@
   <div class="page">
     <div class="archive-container">
       <h1>{{ $t("archivePage") }}</h1>
-      <h3>Stručni kriteriji</h3>
-      prema kojima HDLU Varaždin daje preporuke i potporu svojim članovima kod ostvarivanja prava samostalnih
-      umjetnika ili kod mjera za poticanje kulturnog i umjetničkog stvaralaštva.
-      Stručni kriteriji usuglašeni su s Ministarstvom kulture i medija i njima članovi dokazuju da profesionalno
-      obavljaju umjetničku djelatnost.
-      <ul>
-        <h4>Slikar</h4>
-        <li>a) 3 samostalne izložbe</li>
-        <li>b) 5 skupnih žiriranih izložbi ili</li>
-        <li>c) 2 samostalne izložbe i 2 skupne žirirane izložbe.</li>
 
-        <h4>Multimedijalni umjetnik</h4>
-        <li>a) 3 samostalna multimedijalna projekta</li>
-        <li>b) 5 skupnih multimedijalnih projekata,</li>
-        <li>c) 2 samostalna i 2 skupna multimedijalna projekta ili</li>
-        <li>d) 5 skupnih žiriranih izložbi.</li>
-        Pod multimedijalnim projektom podrazumijeva se video, film, računalna umjetnost, performans i drugi oblici
-        suvremenog umjetničkog izražavanja.
-
-        <h4>Kipar</h4>
-        <li>a) 3 samostalne izložbe</li>
-        <li>b) 5 skupnih žiriranih izložbi</li>
-        <li>c) 1 samostalna izložba i 4 skupne žirirane izložbe ili</li>
-        <li>d) 2 samostalne izložbe i 2 skupne žirirane izložbe.</li>
-
-        <li>- Izložbe se priznaju ako su izlagana različita umjetnička djela.</li>
-        <li>- Izložbe se priznaju ako su realizirane u istaknutim institucijama ili izložbenim prostorima na području
-          Republike Hrvatske.
-        </li>
-        <li>- Umjetnička djela ostvarena izvan istaknutih institucija i izložbenih prostora priznaju se ako
-          predstavljaju
-          doprinos hrvatskoj kulturi i umjetnosti.</li>
-      </ul>
-      <h3>Preuzmi</h3>
+      <div v-for="post in filteredPosts" :key="post.id">
+        <div v-html="post.value.content.rendered"></div>
+      </div>
+      <h3 v-if="currentLanguage === 'en'">Download</h3>
+      <h4 v-else>Preuzmi</h4>
       <div class="btns">
         <div v-for="file in filteredFiles" :key="file.id">
           <a :href="file.value.acf?.file" download>
@@ -57,6 +29,7 @@ import { ref, computed, onMounted, onUnmounted } from "vue";
 import Footer from '@/components/Footer.vue';
 
 let files = ref([]);
+let posts = ref([]);
 const currentLanguage = ref(localStorage.getItem("i18nextLng"));
 
 async function fetchFiles() {
@@ -73,8 +46,23 @@ const filteredFiles = computed(() => {
   }
 });
 
+async function fetchPost() {
+  const data = await fetch("http://localhost/hdlu/wp-json/wp/v2/text");
+  const response = await data.json();
+  posts.value = response.map(resp => ({ value: resp }));
+}
+
+const filteredPosts = computed(() => {
+  if (currentLanguage.value === 'en') {
+    return posts.value.filter(post => post.value.link.includes('/hdlu/en/text') && post.value.title.rendered.includes('Professional criteria'));
+  } else {
+    return posts.value.filter(post => post.value.link.includes('/hdlu/text') && post.value.title.rendered.includes('Stručni kriteriji'));
+  }
+});
+
 onMounted(() => {
   fetchFiles()
+  fetchPost()
   window.addEventListener('languageChange', onLanguageChange);
 });
 
