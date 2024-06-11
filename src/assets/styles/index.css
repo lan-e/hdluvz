@@ -560,11 +560,36 @@ a {
 }
 
 .organization-container {
-  padding: 24px 96px;
+  padding: 24px 25%;
+  display: flex;
+  flex-direction: column;
+}
+.organization-container h1 {
+  margin-bottom: 48px;
+}
+.organization-container .organization-members {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: column;
+}
+.organization-container .organization-members h4 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.organization-container .organization-members .member-container {
+  padding-bottom: 24px;
 }
 
 .members-container {
-  padding: 24px 96px;
+  padding: 24px 25%;
+}
+
+.members-all {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: auto;
+  grid-auto-flow: column;
 }
 
 .archive-container {

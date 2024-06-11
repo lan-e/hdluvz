@@ -7,7 +7,8 @@
 <style scoped>
 .wrapper {
     width: 100%;
-    height: 100vh;
+    min-height: 400px;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;

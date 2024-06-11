@@ -2,19 +2,23 @@
   <div class="page">
     <div class="archive-container">
       <h1>{{ $t("archivePage") }}</h1>
-
-      <div v-for="post in filteredPosts" :key="post.id">
-        <div v-html="post.value.content.rendered"></div>
+      <div v-if="!isLoaded">
+        <Loader />
       </div>
-      <h3 v-if="currentLanguage === 'en'">Download</h3>
-      <h4 v-else>Preuzmi</h4>
-      <div class="btns">
-        <div v-for="file in filteredFiles" :key="file.id">
-          <a :href="file.value.acf?.file" download>
-            <button>
-              {{ file.value.title.rendered }}
-            </button>
-          </a>
+      <div v-else>
+        <div v-for="post in filteredPosts" :key="post.id">
+          <div v-html="post.value.content.rendered"></div>
+        </div>
+        <h3 v-if="currentLanguage === 'en'">Download</h3>
+        <h4 v-else>Preuzmi</h4>
+        <div class="btns">
+          <div v-for="file in filteredFiles" :key="file.id">
+            <a :href="file.value.acf?.file" download>
+              <button>
+                {{ file.value.title.rendered }}
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -27,7 +31,9 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
 import Footer from '@/components/Footer.vue';
+import Loader from "@/components/icons/Loader.vue";
 
+const isLoaded = ref(false)
 let files = ref([]);
 let posts = ref([]);
 const currentLanguage = ref(localStorage.getItem("i18nextLng"));
@@ -50,6 +56,7 @@ async function fetchPost() {
   const data = await fetch("http://localhost/hdlu/wp-json/wp/v2/text");
   const response = await data.json();
   posts.value = response.map(resp => ({ value: resp }));
+  isLoaded.value = true;
 }
 
 const filteredPosts = computed(() => {
