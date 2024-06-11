@@ -3,7 +3,7 @@
 		<div :class="{ moveUp: !isMenuOpen }" class="navigation" ref="homeNav">
 			<div class="left">
 				<Logo />
-				<h3>Hrvatsko društvo likovnih umjetnika Varaždin</h3>
+				<h3>{{ $t('logoName') }}</h3>
 			</div>
 			<div class="right">
 				<div class="row">

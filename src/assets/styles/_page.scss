@@ -3,7 +3,10 @@
   text-align: left;
   position: relative;
   min-height: 100vh;
-  padding-top: 180px;
+
+  h1 {
+    text-align: left;
+  }
 
   &::after {
     content: "";
@@ -13,9 +16,14 @@
 }
 
 .organization-container {
-  padding: 24px 25%;
+  padding: 220px 38vw;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+
+  @media #{$mobile} {
+    padding: 24px 12vw;
+  }
 
   h1 {
     margin-bottom: 48px;
@@ -26,6 +34,7 @@
     grid-template-columns: 300px 300px;
     grid-template-rows: auto auto auto;
     grid-auto-flow: column;
+    align-items: center;
 
     h4 {
       margin-top: 0;
@@ -39,7 +48,17 @@
 }
 
 .members-container {
-  padding: 24px 25%;
+  padding: 220px 38vw;
+
+  @media #{$mobile} {
+    padding: 24px 12vw;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 498px;
+    }
+  }
 }
 
 .members-all {
@@ -50,11 +69,23 @@
 }
 
 .archive-container {
-  padding: 24px 96px;
+  padding: 220px 24vw;
+  height: max-content;
+
+  @media #{$mobile} {
+    padding: 24px 12vw;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 498px;
+    }
+  }
 
   ul {
     list-style: none;
   }
+
   .btns {
     display: flex;
     flex-direction: row;

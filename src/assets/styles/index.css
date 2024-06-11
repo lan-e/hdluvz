@@ -357,6 +357,12 @@ a {
   color: #d30516;
   border-bottom: 3px solid #d30516;
 }
+.eventDetails .date {
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
 .eventDetails .desc {
   display: flex;
   flex-direction: column;
@@ -551,7 +557,9 @@ a {
   text-align: left;
   position: relative;
   min-height: 100vh;
-  padding-top: 180px;
+}
+.page h1 {
+  text-align: left;
 }
 .page::after {
   content: "";
@@ -560,9 +568,15 @@ a {
 }
 
 .organization-container {
-  padding: 24px 25%;
+  padding: 220px 38vw;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+@media (max-width: 900px) {
+  .organization-container {
+    padding: 24px 12vw;
+  }
 }
 .organization-container h1 {
   margin-bottom: 48px;
@@ -572,6 +586,7 @@ a {
   grid-template-columns: 300px 300px;
   grid-template-rows: auto auto auto;
   grid-auto-flow: column;
+  align-items: center;
 }
 .organization-container .organization-members h4 {
   margin-top: 0;
@@ -582,7 +597,17 @@ a {
 }
 
 .members-container {
-  padding: 24px 25%;
+  padding: 220px 38vw;
+}
+@media (max-width: 900px) {
+  .members-container {
+    padding: 24px 12vw;
+  }
+  .members-container::after {
+    content: "";
+    display: block;
+    height: 498px;
+  }
 }
 
 .members-all {
@@ -593,7 +618,19 @@ a {
 }
 
 .archive-container {
-  padding: 24px 96px;
+  padding: 220px 24vw;
+  height: -moz-max-content;
+  height: max-content;
+}
+@media (max-width: 900px) {
+  .archive-container {
+    padding: 24px 12vw;
+  }
+  .archive-container::after {
+    content: "";
+    display: block;
+    height: 498px;
+  }
 }
 .archive-container ul {
   list-style: none;

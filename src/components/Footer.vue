@@ -2,7 +2,10 @@
     <div class="footer-container">
         <hr>
         <div class="footer">
-            <Logo />
+            <div class="col">
+                <Logo />
+                <div>{{ $t('logoName') }}</div>
+            </div>
             <div class="info">
                 <div v-if="currentLanguage === 'hr'">
                     <b>Radno vrijeme</b>
@@ -33,8 +36,7 @@
         </div>
     </div>
     <div class="allrights">HDLU Varaždin ©
-        <span v-if="currentLanguage === 'hr'">Sva prava pridržana.</span>
-        <span v-else>All rights reserved.</span>
+        {{ $t('allRights') }}
     </div>
 </template>
 

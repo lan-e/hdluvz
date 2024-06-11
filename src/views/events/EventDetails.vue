@@ -2,8 +2,9 @@
     <div v-if="!isLoaded">
         <Loader />
     </div>
-    <div class="eventDetails" v-else>
+    <div v-else class="eventDetails">
         <h1 class="title">{{ event.title?.rendered }}</h1>
+        <div class="date">{{ event.acf.from_to }}</div>
         <div class="desc" v-html="event.acf.content"></div>
         <img class="imgContainer" :src="event.acf?.image" alt="Event Image">
     </div>

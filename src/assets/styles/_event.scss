@@ -19,6 +19,13 @@
     border-bottom: 3px solid $red1;
   }
 
+  .date {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
   .desc {
     display: flex;
     flex-direction: column;
