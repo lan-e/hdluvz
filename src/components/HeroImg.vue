@@ -17,7 +17,8 @@
             </div>
         </div>
         <div class="bg">
-            <img src="@/assets/img/homebg.png" alt="">
+            <img v-if="slider == 1" src="@/assets/img/homebg.png" alt="">
+            <img v-else src="@/assets/img/nekad.jpg" alt="">
             <div class="bgMask"></div>
             <div class="bgMaskMsg"></div>
             <div v-for="post in filteredPosts" :key="post.id" class="overlayText">

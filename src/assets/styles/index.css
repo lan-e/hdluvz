@@ -123,7 +123,7 @@ a {
   transition: 0.3s top ease-in-out;
   font-family: Yaldevi;
   height: 200px;
-  padding: 30px 10%;
+  padding: 30px 15%;
 }
 .navigation h3 {
   margin: 0;
@@ -136,7 +136,7 @@ a {
 }
 .navigation.navbar-scrolled {
   top: -140px;
-  padding: 16px 10%;
+  padding: 16px 15%;
 }
 .navigation.navbar-scrolled h3 {
   padding-top: 32px;
@@ -305,10 +305,9 @@ a {
 .heroimg .title {
   color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 15%;
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
 }
 .heroimg h4 {
   font-weight: 100;
@@ -322,7 +321,7 @@ a {
 .heroimg .overlayText {
   position: absolute;
   left: 50%;
-  width: 60%;
+  width: 70%;
   bottom: 0;
   transform: translate(-50%, 0%);
   margin-bottom: 24px;
@@ -339,8 +338,8 @@ a {
 .eventDetails {
   background-color: var(--color4);
   color: var(--color3);
-  padding: 16px;
-  padding-top: 200px;
+  padding: 15%;
+  padding-top: 220px;
 }
 @media (max-width: 900px) {
   .eventDetails {
@@ -368,7 +367,6 @@ a {
   flex-direction: column;
   gap: 24px;
   max-width: 55%;
-  word-break: break-all;
 }
 @media (max-width: 900px) {
   .eventDetails .desc {
@@ -597,7 +595,7 @@ a {
 }
 
 .members-container {
-  padding: 220px 38vw;
+  padding: 220px 30vw;
 }
 @media (max-width: 900px) {
   .members-container {
@@ -667,7 +665,7 @@ a {
   height: 498px;
 }
 .gallery-container .masonry-with-columns {
-  margin: 0 20%;
+  margin: 48px 10%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

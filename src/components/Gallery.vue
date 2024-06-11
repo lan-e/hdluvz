@@ -19,6 +19,11 @@
                     <img :src="event.value.acf.image" alt="">
                 </router-link>
             </div>
+            <div v-for="event in filteredEvents" :key="event.value.id" class="event">
+                <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
+                    <img :src="event.value.acf.image" alt="">
+                </router-link>
+            </div>
         </div>
     </div>
     <!-- <masonry-wall :items="items" :ssr-columns="3" :column-width="300" :gap="16">

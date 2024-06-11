@@ -2,7 +2,7 @@
   <div class="home">
     <HeroImg />
     <!-- <Events /> -->
-    <h1>{{ $t("events") }}</h1>
+    <h1 style="margin-top: 96px">{{ $t("events") }}</h1>
     <Gallery />
     <!-- <About /> -->
     <div id="contact">
