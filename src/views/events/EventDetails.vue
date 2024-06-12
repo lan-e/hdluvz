@@ -21,24 +21,42 @@
     </div>
 </template>
 
-<script setup>
-import { ref, onMounted } from "vue";
-import { useRoute } from "vue-router";
+<script>
 import Loader from "@/components/icons/Loader.vue";
 import Footer from "@/components/Footer.vue";
 
-const route = useRoute();
-let event = ref([]);
-const isLoaded = ref(false);
+export default {
+    components: {
+        Loader,
+        Footer,
+    },
+    data() {
+        return {
+            event: {},
+            isLoaded: false,
+            currentLanguage: localStorage.getItem("i18nextLng"),
+        };
+    },
+    computed: {
+        filteredEvents() {
+            if (this.currentLanguage === "en") {
+                return this.events.filter((event) => event.value.link.includes("/hdlu/en/event"));
+            } else {
+                return this.events.filter((event) => event.value.link.includes("/hdlu/event"));
+            }
+        },
+    },
+    methods: {
+        async fetchData() {
+            const data = await fetch(`http://localhost/hdlu/wp-json/wp/v2/events/${this.$route.params.id}`);
 
-async function fetchData() {
-    const data = await fetch(`http://localhost/hdlu/wp-json/wp/v2/events/${route.params.id}`);
-    const response = await data.json();
-    event.value = response;
-    isLoaded.value = true;
-}
-
-onMounted(() => {
-    fetchData();
-});
+            const response = await data.json();
+            this.event = response;
+            this.isLoaded = true;
+        },
+    },
+    mounted() {
+        this.fetchData();
+    },
+};
 </script>

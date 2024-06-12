@@ -7,21 +7,8 @@
             <div v-for="event in filteredEvents" :key="event.value.id" class="event">
                 <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
                     <img :src="event.value.acf.image" alt="" />
-                </router-link>
-            </div>
-            <div v-for="event in filteredEvents" :key="event.value.id" class="event">
-                <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
-                    <img :src="event.value.acf.image" alt="" />
-                </router-link>
-            </div>
-            <div v-for="event in filteredEvents" :key="event.value.id" class="event">
-                <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
-                    <img :src="event.value.acf.image" alt="" />
-                </router-link>
-            </div>
-            <div v-for="event in filteredEvents" :key="event.value.id" class="event">
-                <router-link :to="{ name: 'EventDetails', params: { id: event.value.id } }">
-                    <img :src="event.value.acf.image" alt="" />
+                    <h3>{{ event.value.title.rendered }}</h3>
+                    <h4>{{ event.value.acf.from_to }}</h4>
                 </router-link>
             </div>
         </div>
@@ -53,7 +40,7 @@ export default {
     },
     methods: {
         async fetchData() {
-            const data = await fetch("http://localhost/hdlu/wp-json/wp/v2/events");
+            const data = await fetch("http://localhost/hdlu/wp-json/wp/v2/events?per_page=12");
             const response = await data.json();
             this.events = response.map((resp) => ({ value: resp }));
             this.isLoaded = true;

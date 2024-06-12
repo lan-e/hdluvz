@@ -16,11 +16,12 @@
 }
 
 .organization-container {
-    padding: 220px 0;
+    padding: 220px 15% 50px 15%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: max-content;
+    min-height: 100vh;
     width: max-content;
 
     @media #{$mobile} {
@@ -28,19 +29,20 @@
     }
 
     h1 {
-        margin-bottom: 64px;
+        margin-bottom: 100px;
+        font-size: 32px;
         text-align: center;
     }
 
     .organization-members {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: max-content max-content max-content;
+        grid-template-rows: auto auto;
         grid-auto-flow: column;
-        align-items: center;
-        gap: 28px;
+        align-items: flex-start;
+        gap: 64px;
 
-        padding-left: 64px;
+        //padding-left: 64px;
 
         h4 {
             margin-top: 0;
@@ -59,9 +61,11 @@
 }
 
 .members-container {
-    padding: 220px 0;
+    padding: 220px 15% 50px 15%;
     margin: 0 auto;
     width: max-content;
+    height: max-content;
+    min-height: 100vh;
 
     @media #{$mobile} {
         padding: 24px 12vw;
@@ -74,7 +78,7 @@
     }
 
     h1 {
-        margin-bottom: 64px;
+        margin-bottom: 100px;
         text-align: center;
     }
 }
@@ -100,8 +104,9 @@
 }
 
 .archive-container {
-    padding: 220px 24vw;
+    padding: 220px 15% 100px 15%;
     height: max-content;
+    min-height: 100vh;
 
     @media #{$mobile} {
         padding: 24px 12vw;
@@ -113,13 +118,30 @@
         }
     }
 
+    .content {
+        font-size: 20px;
+    }
+
     ul {
-        list-style: none;
+        padding-left: 20px;
+    }
+
+    h1 {
+        margin-bottom: 64px;
+    }
+
+    > div {
+        > h4 {
+            font-size: 20px;
+            margin-top: 64px;
+            text-align: center;
+        }
     }
 
     .btns {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 16px;
 
         button {
@@ -127,13 +149,17 @@
             font-family: Yaldevi;
             font-weight: 600;
             text-transform: uppercase;
-            font-size: 15px;
+            font-size: 14px;
             background: #d30516;
             color: #fff;
             outline: none;
             border: none;
             /* border-radius: 4px; */
-            padding: 8px 20px;
+            padding: 8px 16px;
+
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
     }
 }

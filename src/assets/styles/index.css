@@ -301,11 +301,12 @@ a {
 }
 .home > .heroimg .title {
   width: 100%;
+  color: var(--color3);
 }
 .home > .heroimg .title .left {
   left: 15%;
   position: absolute;
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 .home > .heroimg .title .left:hover {
   left: 15%;
@@ -315,7 +316,7 @@ a {
 .home > .heroimg .title .right {
   right: 15%;
   position: absolute;
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 .home > .heroimg .title .right:hover {
   right: 15%;
@@ -323,7 +324,7 @@ a {
   font-weight: 500;
 }
 .home > .heroimg .title .active {
-  color: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 .home > .heroimg h4 {
   font-weight: 100;
@@ -506,6 +507,9 @@ a {
     font-size: 16px;
   }
 }
+.about-container > hr {
+  margin: 0 0 75px 0;
+}
 .about-container .about {
   width: 100%;
   height: 100%;
@@ -551,10 +555,7 @@ a {
   justify-content: center;
 }
 .about-container .about h2 {
-  text-align: center;
-  width: 150px;
-  text-transform: uppercase;
-  font-family: "Playfair Display";
+  font-size: 32px;
 }
 .about-container .about .title {
   margin-top: 0;
@@ -581,7 +582,7 @@ a {
 }
 .footer-container hr {
   margin-bottom: 48px;
-  width: 80%;
+  width: 85%;
 }
 .footer-container iframe {
   width: 100%;
@@ -649,11 +650,13 @@ a {
 }
 
 .organization-container {
-  padding: 220px 0;
+  padding: 220px 15% 50px 15%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100vh;
   width: -moz-max-content;
   width: max-content;
 }
@@ -663,17 +666,17 @@ a {
   }
 }
 .organization-container h1 {
-  margin-bottom: 64px;
+  margin-bottom: 100px;
+  font-size: 32px;
   text-align: center;
 }
 .organization-container .organization-members {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: max-content max-content max-content;
+  grid-template-rows: auto auto;
   grid-auto-flow: column;
-  align-items: center;
-  gap: 28px;
-  padding-left: 64px;
+  align-items: flex-start;
+  gap: 64px;
 }
 .organization-container .organization-members h4 {
   margin-top: 0;
@@ -684,10 +687,13 @@ a {
   font-size: 20px;
 }
 .members-container {
-  padding: 220px 0;
+  padding: 220px 15% 50px 15%;
   margin: 0 auto;
   width: -moz-max-content;
   width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100vh;
 }
 @media (max-width: 900px) {
   .members-container {
@@ -700,7 +706,7 @@ a {
   }
 }
 .members-container h1 {
-  margin-bottom: 64px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -722,9 +728,10 @@ a {
 }
 
 .archive-container {
-  padding: 220px 24vw;
+  padding: 220px 15% 100px 15%;
   height: -moz-max-content;
   height: max-content;
+  min-height: 100vh;
 }
 @media (max-width: 900px) {
   .archive-container {
@@ -736,12 +743,24 @@ a {
     height: 498px;
   }
 }
+.archive-container .content {
+  font-size: 20px;
+}
 .archive-container ul {
-  list-style: none;
+  padding-left: 20px;
+}
+.archive-container h1 {
+  margin-bottom: 64px;
+}
+.archive-container > div > h4 {
+  font-size: 20px;
+  margin-top: 64px;
+  text-align: center;
 }
 .archive-container .btns {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 16px;
 }
 .archive-container .btns button {
@@ -749,19 +768,22 @@ a {
   font-family: Yaldevi;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   background: #d30516;
   color: #fff;
   outline: none;
   border: none;
   /* border-radius: 4px; */
-  padding: 8px 20px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .gallery-container {
   width: 100%;
   padding: 0 15%;
-  margin-bottom: 100px;
+  margin-bottom: 125px;
   /* &::after {
          content: "";
          display: block;
@@ -775,8 +797,9 @@ a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
+  grid-row-gap: 100px;
   margin-top: 48px;
 }
 @media (max-width: 900px) {
@@ -798,4 +821,14 @@ a {
     margin: 0;
     width: 200px;
   }
+}
+.gallery-container > .masonry-with-columns h3 {
+  color: var(--color3);
+  font-size: 24px;
+  margin: 5px 0;
+}
+.gallery-container > .masonry-with-columns h4 {
+  color: var(--color3);
+  font-size: 14px;
+  margin: 5px 0;
 }/*# sourceMappingURL=index.css.map */

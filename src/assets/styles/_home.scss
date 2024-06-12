@@ -42,11 +42,12 @@
         .title {
             // color: var(--color2);
             width: 100%;
+            color: var(--color3);
 
             & .left {
                 left: 15%;
                 position: absolute;
-                color: rgba($color: #000000, $alpha: 0.3);
+                opacity: 0.3;
             }
 
             & .left:hover {
@@ -58,7 +59,7 @@
             & .right {
                 right: 15%;
                 position: absolute;
-                color: rgba($color: #000000, $alpha: 0.3);
+                opacity: 0.3;
             }
 
             & .right:hover {
@@ -68,7 +69,7 @@
             }
 
             & .active {
-                color: rgba($color: #000000, $alpha: 0.6);
+                opacity: 0.6;
             }
         }
 
