@@ -1,40 +1,77 @@
 .about-container {
-  text-align: justify;
-  font-size: 20px;
+    text-align: justify;
+    font-size: 20px;
+    padding: 0 15%;
 
-  @media #{$mobile} {
-    font-size: 16px;
-  }
+    &::after {
+        content: "";
+        display: block;
+        height: 550px;
+    }
 
-  hr {
-    margin: 40px;
-  }
-}
+    @media #{$mobile} {
+        font-size: 16px;
+    }
 
-.about {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  color: var(--color2);
-  margin: 200px 20%;
+    .about {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "left-side right-side";
 
-  @media #{$mobile} {
-    flex-direction: column;
-    gap: 48px;
-    margin: 100px 10%;
-  }
+        gap: 24px;
 
-  .col {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+        color: var(--color2);
 
-  h2 {
-    text-align: center;
-    width: 150px;
-    text-transform: uppercase;
-    font-family: "Playfair Display";
-  }
+        @media #{$mobile} {
+            flex-direction: column;
+            gap: 48px;
+            margin: 100px 10%;
+        }
+
+        > .grid-left-side {
+            grid-area: left-side;
+            width: 100%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        > .grid-right-side {
+            grid-area: right-side;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            > img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+            width: 150px;
+            text-transform: uppercase;
+            font-family: "Playfair Display";
+        }
+
+        .title {
+            margin-top: 0;
+        }
+    }
 }

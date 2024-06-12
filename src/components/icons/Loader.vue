@@ -26,7 +26,7 @@
 }
 
 .loader:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 96px;
     height: 96px;
@@ -42,25 +42,24 @@
 
 @keyframes scaleUp {
     0% {
-        transform: translate(-50%, -50%) scale(0)
+        transform: translate(-50%, -50%) scale(0);
     }
 
     60%,
     100% {
-        transform: translate(-50%, -50%) scale(1)
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
 @keyframes pulse {
-
     0%,
     60%,
     100% {
-        transform: scale(1)
+        transform: scale(1);
     }
 
     80% {
-        transform: scale(1.2)
+        transform: scale(1.2);
     }
 }
 </style>

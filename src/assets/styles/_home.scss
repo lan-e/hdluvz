@@ -1,76 +1,101 @@
 .home {
-  position: relative;
-}
-
-.heroimg {
-  position: relative;
-
-  .bg {
     position: relative;
-    background-color: var(--color4);
+    margin-top: 100px;
 
-    img {
-      width: 100%;
-      height: 600px;
-      object-fit: cover;
+    > .heroimg {
+        position: relative;
+
+        > .bg {
+            position: relative;
+            background-color: var(--color4);
+
+            img {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+            }
+
+            .bgMask {
+                background: var(--color1);
+                opacity: 0.5;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .bgMaskMsg {
+                position: absolute;
+                background: var(--color1);
+                opacity: 0.8;
+                height: 200px;
+                width: 100%;
+                bottom: 0;
+
+                @media #{$mobile} {
+                    height: 100%;
+                }
+            }
+        }
+
+        .title {
+            // color: var(--color2);
+            width: 100%;
+
+            & .left {
+                left: 15%;
+                position: absolute;
+                color: rgba($color: #000000, $alpha: 0.3);
+            }
+
+            & .left:hover {
+                left: 15%;
+                position: absolute;
+                font-weight: 500;
+            }
+
+            & .right {
+                right: 15%;
+                position: absolute;
+                color: rgba($color: #000000, $alpha: 0.3);
+            }
+
+            & .right:hover {
+                right: 15%;
+                position: absolute;
+                font-weight: 500;
+            }
+
+            & .active {
+                color: rgba($color: #000000, $alpha: 0.6);
+            }
+        }
+
+        h4 {
+            font-weight: 100;
+            z-index: 99;
+            position: absolute;
+            font-family: "Yaldevi";
+            bottom: 200px;
+            margin: 0;
+            font-size: 100px;
+        }
+
+        .overlayText {
+            position: absolute;
+            left: 50%;
+            width: 70%;
+            bottom: 0;
+            transform: translate(-50%, 0%);
+            margin-bottom: 24px;
+            text-align: justify;
+            font-size: 20px;
+            color: var(--color2);
+
+            @media #{$mobile} {
+                font-size: 16px;
+            }
+        }
     }
-
-    .bgMask {
-      background: var(--color1);
-      opacity: 0.5;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .bgMaskMsg {
-      position: absolute;
-      background: var(--color1);
-      opacity: 0.8;
-      height: 200px;
-      width: 100%;
-      bottom: 0;
-
-      @media #{$mobile} {
-        height: 100%;
-      }
-    }
-  }
-
-  .title {
-    // color: var(--color2);
-    color: rgba($color: #000000, $alpha: 0.5);
-    display: flex;
-    justify-content: space-between;
-    padding: 0 15%;
-    width: 100%;
-  }
-
-  h4 {
-    font-weight: 100;
-    z-index: 99;
-    position: absolute;
-    font-family: "Yaldevi";
-    bottom: 200px;
-    margin: 0;
-    font-size: 100px;
-  }
-
-  .overlayText {
-    position: absolute;
-    left: 50%;
-    width: 70%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-    margin-bottom: 24px;
-    text-align: justify;
-    font-size: 18px;
-    color: var(--color2);
-
-    @media #{$mobile} {
-      font-size: 16px;
-    }
-  }
 }

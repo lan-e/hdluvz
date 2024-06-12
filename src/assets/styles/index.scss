@@ -13,19 +13,19 @@ $mobile: "(max-width: 900px)";
 $tablet: "(max-width: 1200px)";
 
 [data-theme="light"] {
-  --color1: #{$white1};
-  --color2: #{$gray1};
-  --color3: #{$blue1};
-  --color4: #{$white2};
-  --color5: #{$white3};
+    --color1: #{$white1};
+    --color2: #{$gray1};
+    --color3: #{$blue1};
+    --color4: #{$white2};
+    --color5: #{$white3};
 }
 
 [data-theme="dark"] {
-  --color1: #{$gray1};
-  --color2: #{$white1};
-  --color3: #{$white1};
-  --color4: #{$gray2};
-  --color5: #{$gray2};
+    --color1: #{$gray1};
+    --color2: #{$white1};
+    --color3: #{$white1};
+    --color4: #{$gray2};
+    --color5: #{$gray2};
 }
 
 @import "app";

@@ -1,21 +1,35 @@
 <template>
-  <div v-if="loading">
-    <Loader />
-  </div>
-  <div v-else>
-    <Navigation />
-    <router-view />
-  </div>
+    <div v-if="this.loading">
+        <Loader />
+    </div>
+    <div v-else>
+        <Navigation />
+        <router-view />
+    </div>
 </template>
 
-<script setup>
-import { ref } from "vue"
-import Navigation from "./components/Navigation.vue"
-import Loader from "./components/icons/Loader.vue"
+<script>
+import Navigation from "./components/Navigation.vue";
+import Loader from "./components/icons/Loader.vue";
 
-const loading = ref(true)
+export default {
+    name: "App",
+    components: { Navigation, Loader },
+    data() {
+        return {
+            loading: false,
+        };
+    },
+    mounted() {
+        setTimeout(() => {
+            this.loading = false;
+        }, 1000);
 
-setTimeout(() => {
-  loading.value = false
-}, 1000)
+        this.$myGlobalVariable.windowWidth = window.innerWidth;
+
+        window.onresize = () => {
+            this.$myGlobalVariable.windowWidth = window.innerWidth;
+        };
+    },
+};
 </script>

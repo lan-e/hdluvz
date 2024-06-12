@@ -1,77 +1,79 @@
 .footer-container {
-  font-family: Yaldevi;
-  padding: 70px 120px;
-  background: var(--color4);
-  color: var(--color2);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-
-  @media #{$mobile} {
-    padding: 60px;
-  }
-
-  .router-link-active {
-    height: max-content;
-  }
-
-  hr {
-    margin-bottom: 48px;
-  }
-
-  iframe {
-    // width: 100%;
-    min-width: 300px;
-  }
-
-  .footer {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
+    font-family: Yaldevi;
+    padding: 70px 0;
+    background: var(--color4);
+    color: var(--color2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 
     @media #{$mobile} {
-      flex-direction: column;
+        padding: 60px;
     }
 
-    img {
-      height: 120px;
-    }
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-
-    .numbers {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
+    .router-link-active {
+        height: max-content;
     }
 
-    a {
-      padding: 4px 16px;
-      color: var(--color2);
-      border-radius: 4px;
-
-      &:hover {
-        color: $red1;
-        transition: all 0.2s;
-      }
+    hr {
+        margin-bottom: 48px;
+        width: 80%;
     }
-  }
+
+    iframe {
+        width: 100%;
+        //min-width: 300px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        padding: 0 15%;
+
+        @media #{$mobile} {
+            flex-direction: column;
+        }
+
+        img {
+            height: 120px;
+        }
+
+        > .info {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .numbers {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            a {
+                padding: 4px 16px;
+                color: var(--color2);
+                border-radius: 4px;
+
+                &:hover {
+                    color: $red1;
+                    transition: all 0.2s;
+                }
+            }
+        }
+    }
 }
 
 .allrights {
-  font-family: Yaldevi;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  color: $blue1;
-  background: var(--color1);
-  color: var(--color2);
-  font-size: 16px;
-  padding: 11px;
+    font-family: Yaldevi;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: $blue1;
+    background: var(--color1);
+    color: var(--color2);
+    font-size: 14px;
+    padding: 11px;
 }

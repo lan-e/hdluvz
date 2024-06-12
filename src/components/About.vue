@@ -1,58 +1,58 @@
 <template>
     <div class="about-container">
-        <hr>
         <div class="about">
-            <div class="col">
-                <h2>{{ $t("aboutPage") }}</h2>
-                <router-link to="/about">
-                    <Button />
-                </router-link>
+            <div class="grid-left-side">
+                <div v-if="currentLanguage === 'hr'">
+                    <h1 class="title">O nama</h1>
+                    <div class="text">
+                        Svaka poslovno sposobna osoba koja ispunjava kriterije Statuta može postati član HDLU Varaždin. Statut predviđa i povremeno članstvo za one koji sudjeluju u realizaciji
+                        programa i pomažu radu udruge.<br /><br />
+                        Članovi HDLU Varaždin, većinom umjetnici s formalnim obrazovanjem, rade na razvoju i promociji suvremene likovne umjetnosti i kulture. Manji dio članova nema formalno
+                        obrazovanje, ali ima značajan umjetnički rad i profesionalne kritike.<br />
+                        <br />
+                        Galerija HDLU Varaždin, smještena u Kuli stražarnici Starog grada u Varaždinu, organizira izložbe članova i gostujućih umjetnika, privlačeći mnoge posjetitelje, uključujući
+                        turiste. Raznolik profil posjetitelja pokazuje važnost suvremenog likovnog stvaralaštva za kulturu grada. <br /><br />HDLU Varaždin poziva donatore da podrže razvoj likovne
+                        umjetnosti. Udruga nudi medijsku vidljivost, marketinške aktivnosti ili umjetnička djela kao nadoknadu. <br /><br />
+                        HDLU Varaždin surađuje s gospodarskim subjektima i pojedincima, nudeći usluge kao što su kupnja umjetničkih djela s certifikatom, vizualni identitet, savjeti za uređenje
+                        prostora i valorizacija umjetničkih djela.
+                    </div>
+                </div>
+                <div v-else>
+                    <h1 class="title">About us</h1>
+                    <div class="text">
+                        Every legally capable person who meets the criteria of the Statute can become a member of HDLU Varaždin. The Statute also provides for occasional membership for those who
+                        participate in the implementation of programs and assist in the work of the association.<br /><br />
+                        Members of HDLU Varaždin, mostly artists with formal education, work on the development and promotion of contemporary visual arts and culture. A smaller number of members do
+                        not have formal education but have significant artistic work and professional critiques.<br /><br />
+                        The gallery of HDLU Varaždin, located in the Watchtower of the Old Town in Varaždin, organizes exhibitions of members and guest artists, attracting many visitors, including
+                        tourists. The diverse profile of visitors shows the importance of contemporary visual creativity for the city's culture.<br /><br />
+                        HDLU Varaždin invites donors to support the development of visual arts. The association offers media visibility, marketing activities, or artworks as compensation.<br /><br />
+                        HDLU Varaždin collaborates with economic entities and individuals, offering services such as the purchase of certified artworks, visual identity, space decoration advice, and
+                        the evaluation of artworks.
+                    </div>
+                </div>
             </div>
-            <div v-if="currentLanguage === 'hr'">
-                Članovi HDLU Varaždin svojim umjetničkim djelovanjem rade na razvoju i promociji suvremene likovne
-                umjetnosti i
-                kulture. U galeriji, trenutno smještenoj u Kuli stražarnici Starog grada u Varaždinu, organiziraju se
-                samostalne
-                i grupne izložbe svojih članova, ali i gostujućih umjetnika iz zemlje i inozemstva. Bogata ponuda
-                galerije
-                HDLU
-                Varaždin redovito privlači veliki broj posjetitelja i time pokazuje važnost udruge u kulturi grada i
-                njezinih
-                građana. Galeriju posjećuju i brojni turisti koji dolaze u Varaždin, zadovoljni što turistička ponuda
-                grada
-                uključuje stvaralaštvo suvremenih likovnih i multimedijskih umjetnika.
-            </div>
-            <div v-else>
-                The members of HDLU Varaždin are working on the development and promotion of contemporary art through
-                their artistic activities arts and cultures. In the gallery, currently located in the Watchtower of the
-                Old Town in Varaždin, they organize independent and group exhibitions of its members, as well as
-                guest artists from the country and abroad. Gallery HDLU Varaždin regularly attracts a large number of
-                visitors and thus shows the importance of
-                the association in the city's culture its citizens. The gallery is also visited by many tourists who
-                come to Varaždin, satisfied with the
-                tourist offer of the city includes the work of contemporary visual and multimedia artists.
+            <div class="grid-right-side">
+                <img src="@/assets/img/about2.png" alt="" />
             </div>
         </div>
-        <hr>
     </div>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from "vue"
-import Button from './icons/Button.vue';
-import i18next from "i18next";
+import { ref, onMounted, onUnmounted } from "vue";
 
 const currentLanguage = ref(localStorage.getItem("i18nextLng"));
 
 onMounted(() => {
-    window.addEventListener('languageChange', onLanguageChange);
+    window.addEventListener("languageChange", onLanguageChange);
 });
 
 onUnmounted(() => {
-    window.removeEventListener('languageChange', onLanguageChange);
+    window.removeEventListener("languageChange", onLanguageChange);
 });
 
 function onLanguageChange() {
-    currentLanguage.value = localStorage.getItem('i18nextLng');
+    currentLanguage.value = localStorage.getItem("i18nextLng");
 }
 </script>
