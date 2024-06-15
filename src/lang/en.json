@@ -1,17 +1,111 @@
 {
-  "home": "Home",
-  "org": "Organization",
-  "members": "Members",
-  "archive": "Archive",
-  "contact": "Contact",
-  "biography": "Biography",
-  "orgPage": "Organization",
-  "aboutPage": "About",
-  "membersPage": "Members",
-  "archivePage": "Archive",
-  "contactPage": "Contact us",
-  "events": "Latest events",
-  "all": "All exhibitions",
-  "logoName": "Croatian Society of Fine Artists Varaždin",
-  "allRights": "All rights reserved."
+    "home": "Home",
+    "org": "Organization",
+    "members": "Members",
+    "archive": "Archive",
+    "contact": "Contact",
+    "biography": "Biography",
+    "orgPage": "Organization",
+    "aboutPage": "About",
+    "membersPage": "Members",
+    "archivePage": "Archive",
+    "contactPage": "Contact us",
+    "events": "Latest events",
+    "all": "All exhibitions",
+    "logoName": "Croatian Society of Fine Artists Varaždin",
+    "allRights": "All rights reserved.",
+    "event": {
+        "event1": {
+            "title": "Honeymoon",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event2": {
+            "title": "Originating in disappearing",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event3": {
+            "title": "Fusion and permeation",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event4": {
+            "title": "Leaf to leaf",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event5": {
+            "title": "Mine",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event6": {
+            "title": "The life of a picture",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        }
+    },
+    "member": [
+        { "name": "Davor Petak", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Pavlović", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Nenad Opačić", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Rajko Novak", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Mladenović", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Jurica Mihinjač", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Maja Mezga", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Krunoslav Martinović", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Ivana Gabričević", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Eisenbeisser", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Bojan Dolenec", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Duić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Darwin Butković", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Gabriela Butković", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Igor Brkić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Branko Bobić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dora Bakek", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Jasmina Jakopanec", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Velimir Ivezić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Sandra Horvat", "title": "artists", "portfolio": "https://www.unin.hr/" }
+    ],
+    "organization": [
+        { "name": "Davor Petak", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Pavlović", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Nenad Opačić", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Rajko Novak", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Mladenović", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Jurica Mihinjač", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Maja Mezga", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+        { "name": "Krunoslav Martinović", "title": "curator team", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Ivana Gabričević", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Eisenbeisser", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Bojan Dolenec", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Duić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Darwin Butković", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Gabriela Butković", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Igor Brkić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Branko Bobić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dora Bakek", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Jasmina Jakopanec", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Velimir Ivezić", "title": "artists", "portfolio": "https://www.unin.hr/" },
+        { "name": "Sandra Horvat", "title": "artists", "portfolio": "https://www.unin.hr/" }
+    ],
+    "posts": {
+        "today": {
+            "title": "Today",
+            "content": "Croatian Society of Fine Artists Varaždin is a professional association of fine artists in the area Varaždin County. The association has 25 regular members, 15 of whom have an art academic education (academic painter, sculptor, graphic artist, professor of fine arts), two have graduated from a high school of fine arts directions, and the rest are self-taught art students who have satisfied themselves with many years of work and the level they have reached criteria for admission to the Society."
+        },
+        "before": {
+            "title": "Before",
+            "content": "The gallery space in a certain environment offers the possibility of insight into current events in the fine arts, and alone team and emerging artists. HDLU Varaždin is a rare professional association in our country, which still does not have its exhibition space and as a leader of modernity cannot show its activity to the right extent, nor a world trend."
+        },
+        "about-us": {
+            "title": "About us",
+            "content": "Every legally capable person who meets the criteria of the Statute can become a member of HDLU Varaždin. The Statute also provides for occasional membership for those who participate in the implementation of programs and assist in the work of the association. Members of HDLU Varaždin, mostly artists with formal education, work on the development and promotion of contemporary visual arts and culture. A smaller number of members do not have formal education but have significant artistic work and professional critiques. The gallery of HDLU Varaždin, located in the Watchtower of the Old Town in Varaždin, organizes exhibitions of members and guest artists, attracting many visitors, including tourists. The diverse profile of visitors shows the importance of contemporary visual creativity for the city's culture. HDLU Varaždin invites donors to support the development of visual arts. The association offers media visibility, marketing activities, or artworks as compensation. HDLU Varaždin collaborates with economic entities and individuals, offering services such as the purchase of certified artworks, visual identity, space decoration advice, and the evaluation of artworks."
+        },
+        "professional-criteria": {
+            "title": "Professional criteria",
+            "content": "Professional Criteria Criteria by which HDLU Varaždin provides recommendations and support to its members for obtaining the status of independent artists or for measures to promote cultural and artistic creativity. These professional criteria are agreed upon with the Ministry of Culture and Media, and members use them to prove that they professionally engage in artistic activities. Painter a) 3 solo exhibitions b) 5 group juried exhibitions or c) 2 solo exhibitions and 2 group juried exhibitions. Multimedia Artist a) 3 solo multimedia projects b) 5 group multimedia projects, c) 2 solo and 2 group multimedia projects or d) 5 group juried exhibitions. Note: A multimedia project includes video, film, computer art, performance, and other forms of contemporary artistic expression. Sculptor a) 3 solo exhibitions b) 5 group juried exhibitions c) 1 solo exhibition and 4 group juried exhibitions or d) 2 solo exhibitions and 2 group juried exhibitions. Exhibitions are recognized if different artworks are displayed. Exhibitions are recognized if held in prominent institutions or exhibition spaces within the Republic of Croatia. Artworks displayed outside prominent institutions and exhibition spaces are recognized if they contribute to Croatian culture and art."
+        }
+    },
+    "file": [
+        { "name": "statute", "file": "statut.doc" },
+        { "name": "professional criteria", "file": "strucni-kriteriji.docx" }
+    ]
 }

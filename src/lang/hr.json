@@ -1,17 +1,114 @@
 {
-  "home": "Početna",
-  "org": "Ustroj",
-  "members": "Članovi",
-  "archive": "Arhiva",
-  "contact": "Kontakt",
-  "biography": "Životopis",
-  "orgPage": "Ustroj",
-  "aboutPage": "O nama",
-  "membersPage": "Članovi",
-  "archivePage": "Arhiva",
-  "contactPage": "Kontaktirajte nas",
-  "events": "Aktualni događaji",
-  "all": "Sve izložbe",
-  "logoName": "Hrvatsko društvo likovnih umjetnika Varaždin",
-  "allRights": "Sva prava pridržana."
+    "home": "Početna",
+    "org": "Ustroj",
+    "members": "Članovi",
+    "archive": "Arhiva",
+    "contact": "Kontakt",
+    "biography": "Životopis",
+    "orgPage": "Ustroj",
+    "aboutPage": "O nama",
+    "membersPage": "Članovi",
+    "archivePage": "Arhiva",
+    "contactPage": "Kontaktirajte nas",
+    "events": "Aktualni događaji",
+    "all": "Sve izložbe",
+    "logoName": "Hrvatsko društvo likovnih umjetnika Varaždin",
+    "allRights": "Sva prava pridržana.",
+    "event": {
+        "event1": {
+            "title": "Honeymoon",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event2": {
+            "title": "Nastajanje u nestajanju",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event3": {
+            "title": "Srastanje i prožimanje",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event4": {
+            "title": "List do lista",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event5": {
+            "title": "Moji",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        },
+        "event6": {
+            "title": "Život jedne slike",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
+        }
+    },
+    "member": [
+        { "name": "Davor Petak", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Pavlović", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+        { "name": "Nenad Opačić", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+        { "name": "Rajko Novak", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Mladenović", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+        { "name": "Jurica Mihinjač", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+        { "name": "Maja Mezga", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+        { "name": "Krunoslav Martinović", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Ivana Gabričević", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Eisenbeisser", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Bojan Dolenec", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Duić", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Darwin Butković", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Gabriela Butković", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Igor Brkić", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Branko Bobić", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dora Bakek", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Jasmina Jakopanec", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Velimir Ivezić", "title": "umjetnici", "portfolio": "https://www.unin.hr/" },
+        { "name": "Sandra Horvat", "title": "umjetnici", "portfolio": "https://www.unin.hr/" }
+    ],
+    "organization": [
+        { "name": "Gabriela Butković", "title": "programski voditelj", "portfolio": "https://www.unin.hr/" },
+        { "name": "Klara Macolić Kuparić", "title": "programski voditelj", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Nedjeljko Krčar", "title": "komisija za likovne priredbe", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dora Bakek", "title": "komisija za likovne priredbe", "portfolio": "https://www.unin.hr/" },
+        { "name": "Mateja Rusak, predsjednica", "title": "komisija za likovne priredbe", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Robert Geček", "title": "nadzorni odbor", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Eisenbeisser", "title": "nadzorni odbor", "portfolio": "https://www.unin.hr/" },
+        { "name": "Gabriela Butković", "title": "nadzorni odbor", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Elizabeta Igrec", "title": "umjetnički savjet", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Duić", "title": "umjetnički savjet", "portfolio": "https://www.unin.hr/" },
+        { "name": "Vladimir Gašparić Gapa", "title": "umjetnički savjet", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Sunčanica Tuk", "title": "časni sud", "portfolio": "https://www.unin.hr/" },
+        { "name": "Dražen Pavlović", "title": "časni sud", "portfolio": "https://www.unin.hr/" },
+        { "name": "Nedjeljko Klarić", "title": "časni sud", "portfolio": "https://www.unin.hr/" },
+
+        { "name": "Jelena Petković", "title": "upravni odbor", "portfolio": "https://www.unin.hr/" },
+        { "name": "Klara Macolić Kuparić", "title": "upravni odbor", "portfolio": "https://www.unin.hr/" },
+        { "name": "Ivan Duić", "title": "upravni odbor", "portfolio": "https://www.unin.hr/" },
+        { "name": "Mateja Rusak, dopredsjednica", "title": "upravni odbor", "portfolio": "https://www.unin.hr/" },
+        { "name": "Velimir Ivezić, predsjednik", "title": "upravni odbor", "portfolio": "https://www.unin.hr/" }
+    ],
+    "posts": {
+        "today": {
+            "title": "Danas",
+            "content": "Hrvatsko društvo likovnih umjetnika Varaždin strukovna je udruga likovnih umjetnika na području Varaždinske županije. Udruga broji 25 redovitih članova od kojih 15 ima likovnu akademsku naobrazbu (akademski slikar, kipar, grafičar, profesor likovne kulture), dvoje ima završenu visoku školu likovnog usmjerenja, a ostalo su likovni autodidaki koji su dugogodišnjim radom i dostignutom razinom zadovoljili kriterije prijama u Društvo."
+        },
+        "before": {
+            "title": "Nekad",
+            "content": "Galerijski prostor u nekoj sredini pruža mogućnost uvida u aktualna događanja u likovnoj umjetnosti, a samim tim i nastajanje umjetnika. HDLU Varaždin je rijetka strukovna udruga kod nas, koja još uvijek nema svoj izložbeni prostor i kao predvodnik suvremenosti ne može u pravoj mjeri pokazati aktivnost svojih članova, niti svjetski trend."
+        },
+        "about-us": {
+            "title": "O nama",
+            "content": "Svaka poslovno sposobna osoba koja ispunjava kriterije Statuta može postati član HDLU Varaždin. Statut predviđa i povremeno članstvo za one koji sudjeluju u realizaciji programa i pomažu radu udruge. Članovi HDLU Varaždin, većinom umjetnici s formalnim obrazovanjem, rade na razvoju i promociji suvremene likovne umjetnosti i kulture. Manji dio članova nema formalno obrazovanje, ali ima značajan umjetnički rad i profesionalne kritike. Galerija HDLU Varaždin, smještena u Kuli stražarnici Starog grada u Varaždinu, organizira izložbe članova i gostujućih umjetnika, privlačeći mnoge posjetitelje, uključujući turiste. Raznolik profil posjetitelja pokazuje važnost suvremenog likovnog stvaralaštva za kulturu grada. HDLU Varaždin poziva donatore da podrže razvoj likovne umjetnosti. Udruga nudi medijsku vidljivost, marketinške aktivnosti ili umjetnička djela kao nadoknadu. HDLU Varaždin surađuje s gospodarskim subjektima i pojedincima, nudeći usluge kao što su kupnja umjetničkih djela s certifikatom, vizualni identitet, savjeti za uređenje prostora i valorizacija umjetničkih djela."
+        },
+        "professional-criteria": {
+            "title": "Stručni kriteriji",
+            "content": "Stručni kriteriji prema kojima HDLU Varaždin daje preporuke i potporu svojim članovima kod ostvarivanja pravazsamostalnih umjetnika ili kod mjera za poticanje kulturnog i umjetničkog stvaralaštva. Stručni kriteriji usuglašeni su s Ministarstvom kulture i medija i njima članovi dokazuju da profesionalno obavljaju umjetničku djelatnost. Slikar a) 3 samostalne izložbe b) 5 skupnih žiriranih izložbi ili c) 2 samostalne izložbe i 2 skupne žirirane izložbe. Multimedijalni umjetnik a) 3 samostalna multimedijalna projekt b) 5 skupnih multimedijalnih projekata c) 2 samostalna i 2 skupna multimedijalna projekta ili d) 5 skupnih žiriranih izložbi. Pod multimedijalnim projektom podrazumijeva se video, film, računalna umjetnost, performans i drugi oblici suvremenog umjetničkog izražavanja. Kipar a) 3 samostalne izložba b) 5 skupnih žiriranih izložbi c) 1 samostalna izložba i 4 skupne žirirane izložbe ili d) 2 samostalne izložbe i 2 skupne žirirane izložbe. Izložbe se priznaju ako su izlagana različita umjetnička djela. Izložbe se priznaju ako su realizirane u istaknutim institucijama ili izložbenim prostorima na području Republike Hrvatske. Umjetnička djela ostvarena izvan istaknutih institucija i izložbenih prostora priznaju se ako predstavljaju doprinos hrvatskoj kulturi i umjetnosti."
+        }
+    },
+    "file": [
+        { "name": "statut", "file": "statut.doc" },
+        { "name": "stručni kriteriji", "file": "strucni-kriteriji.docx" }
+    ]
 }

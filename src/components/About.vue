@@ -3,10 +3,12 @@
         <hr />
         <div class="about">
             <div class="grid-left-side">
-                <div v-for="post in filteredPosts" :key="post.id" class="overlayText">
+                <!-- <div v-for="post in filteredPosts" :key="post.id" class="overlayText">
                     <h2 class="title" v-html="post.value.title.rendered"></h2>
                     <div v-html="post.value.content.rendered"></div>
-                </div>
+                </div> -->
+                <h2 class="title">{{ $t("posts.about-us.title") }}</h2>
+                <div>{{ $t("posts.about-us.content") }}</div>
             </div>
             <div class="grid-right-side">
                 <img src="@/assets/img/about2.png" alt="" />
@@ -24,27 +26,27 @@ export default {
         };
     },
     computed: {
-        filteredPosts() {
+        /* filteredPosts() {
             if (this.currentLanguage === "en") {
                 return this.posts.filter((post) => post.value.link.includes("/hdlu/en/text") && post.value.title.rendered.includes("About us"));
             } else {
                 return this.posts.filter((post) => post.value.link.includes("/hdlu/text") && post.value.title.rendered.includes("O nama"));
             }
-        },
+        }, */
     },
     methods: {
-        async fetchPost() {
+        /* async fetchPost() {
             const data = await fetch("http://localhost/hdlu/wp-json/wp/v2/text");
             const response = await data.json();
             this.posts = response.map((resp) => ({ value: resp }));
             console.log("posts", this.posts);
-        },
+        }, */
         onLanguageChange() {
             this.currentLanguage = localStorage.getItem("i18nextLng");
         },
     },
     mounted() {
-        this.fetchPost();
+        /* this.fetchPost(); */
         window.addEventListener("languageChange", this.onLanguageChange);
     },
     beforeUnmount() {

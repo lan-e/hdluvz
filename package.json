@@ -8,11 +8,12 @@
   },
   "dependencies": {
     "@yeger/vue-masonry-wall": "^5.0.10",
-    "i18next": "^23.10.1",
+    "i18next": "^23.11.5",
     "i18next-browser-languagedetector": "^7.2.1",
     "i18next-vue": "^4.0.0",
     "sass": "^1.77.5",
     "vue": "^3.2.13",
+    "vue-i18n": "^9.13.1",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
