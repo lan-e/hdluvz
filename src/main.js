@@ -8,8 +8,8 @@ import "@/assets/styles/index.css";
 const app = createApp(App);
 
 app.config.globalProperties.$myGlobalVariable = reactive({
-  windowWidth: null,
-  mobileWindowWidth: 700,
+    windowWidth: null,
+    mobileWindowWidth: 700,
 });
 
 app.use(router).use(i18n).mount("#app");

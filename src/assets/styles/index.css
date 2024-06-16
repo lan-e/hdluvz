@@ -302,6 +302,7 @@ a {
 .home > .heroimg .title {
   width: 100%;
   color: var(--color3);
+  cursor: pointer;
 }
 .home > .heroimg .title .left {
   left: 15%;
@@ -355,8 +356,7 @@ a {
 .eventDetails {
   background-color: var(--color4);
   color: var(--color3);
-  padding: 15%;
-  padding-top: 250px;
+  padding: 250px 15% 50px 15%;
 }
 @media (max-width: 900px) {
   .eventDetails {
@@ -372,7 +372,7 @@ a {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "left-side right-side";
+  grid-template-areas: "left-side right-side" "bottom-side bottom-side";
   color: var(--color2);
 }
 .eventDetails > .eventDetailsContainer > .grid-left-side {
@@ -396,6 +396,32 @@ a {
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+.eventDetails > .eventDetailsContainer > .grid-bottom-side {
+  grid-area: bottom-side;
+  width: 100%;
+  padding: 75px 0 0 0;
+}
+.eventDetails > .eventDetailsContainer > .grid-bottom-side > .event-gallery-container {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.eventDetails > .eventDetailsContainer > .grid-bottom-side > .event-gallery-container > .gallery-image {
+  width: calc(20% - 12.5px);
+  height: 100%;
+}
+.eventDetails > .eventDetailsContainer > .grid-bottom-side > .event-gallery-container > .gallery-image > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+  display: block;
 }
 .eventDetails .title {
   text-align: left;
@@ -647,6 +673,9 @@ a {
   content: "";
   display: block;
   height: 498px;
+}
+.page a {
+  color: var(--color3);
 }
 
 .organization-container {
