@@ -817,11 +817,19 @@ a {
 }
 .footer-container iframe {
   width: 100%;
+  width: 100%;
 }
 @media (max-width: 900px) {
   .footer-container iframe {
     height: 150px;
     width: 150px;
+  }
+}
+@media (max-width: 390px) {
+  .footer-container iframe {
+    height: 100px;
+    width: 100vw;
+    padding: 0 10px;
   }
 }
 .footer-container .footer {
@@ -837,6 +845,11 @@ a {
     flex-direction: row;
   }
 }
+@media (max-width: 390px) {
+  .footer-container .footer {
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 900px) {
   .footer-container .footer > div {
     font-size: 10px;
@@ -850,6 +863,11 @@ a {
     height: 48px;
   }
 }
+@media (max-width: 390px) {
+  .footer-container .footer > .col {
+    max-width: calc(50vw - 30px);
+  }
+}
 .footer-container .footer > .info {
   display: flex;
   flex-direction: column;
@@ -860,6 +878,11 @@ a {
     text-align: left;
     font-size: 9px;
     gap: 8px;
+  }
+}
+@media (max-width: 390px) {
+  .footer-container .footer > .info {
+    max-width: calc(50vw - 30px);
   }
 }
 .footer-container .footer > .info .numbers {
@@ -1050,22 +1073,30 @@ a {
 }
 @media (max-width: 900px) {
   .archive-container {
-    padding: 24px 12vw;
-  }
-  .archive-container::after {
-    content: "";
-    display: block;
-    height: 498px;
+    padding: 75px 10px 0 10px;
   }
 }
 .archive-container .content {
   font-size: 20px;
+  white-space: break-spaces;
+}
+@media (max-width: 900px) {
+  .archive-container .content {
+    font-size: 16px;
+  }
 }
 .archive-container ul {
   padding-left: 20px;
 }
 .archive-container h1 {
   margin-bottom: 64px;
+}
+@media (max-width: 900px) {
+  .archive-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
 }
 .archive-container > div > h4 {
   font-size: 20px;

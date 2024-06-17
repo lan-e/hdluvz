@@ -149,17 +149,16 @@
     min-height: 100vh;
 
     @media #{$mobile} {
-        padding: 24px 12vw;
-
-        &::after {
-            content: "";
-            display: block;
-            height: 498px;
-        }
+        padding: 75px 10px 0 10px;
     }
 
     .content {
         font-size: 20px;
+        white-space: break-spaces;
+
+        @media #{$mobile} {
+            font-size: 16px;
+        }
     }
 
     ul {
@@ -168,6 +167,12 @@
 
     h1 {
         margin-bottom: 64px;
+
+        @media #{$mobile} {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
     }
 
     > div {

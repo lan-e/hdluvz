@@ -8,7 +8,7 @@
     "orgPage": "ORGANIZATION",
     "aboutPage": "About",
     "membersPage": "MEMBERS",
-    "archivePage": "Archive",
+    "archivePage": "ARCHIVE",
     "contactPage": "Contact us",
     "events": "LATEST EVENTS",
     "all": "All exhibitions",
@@ -202,7 +202,7 @@
         },
         "professionalCriteria": {
             "title": "Professional criteria",
-            "content": "Professional Criteria Criteria by which HDLU Varaždin provides recommendations and support to its members for obtaining the status of independent artists or for measures to promote cultural and artistic creativity. These professional criteria are agreed upon with the Ministry of Culture and Media, and members use them to prove that they professionally engage in artistic activities. Painter a) 3 solo exhibitions b) 5 group juried exhibitions or c) 2 solo exhibitions and 2 group juried exhibitions. Multimedia Artist a) 3 solo multimedia projects b) 5 group multimedia projects, c) 2 solo and 2 group multimedia projects or d) 5 group juried exhibitions. Note: A multimedia project includes video, film, computer art, performance, and other forms of contemporary artistic expression. Sculptor a) 3 solo exhibitions b) 5 group juried exhibitions c) 1 solo exhibition and 4 group juried exhibitions or d) 2 solo exhibitions and 2 group juried exhibitions. Exhibitions are recognized if different artworks are displayed. Exhibitions are recognized if held in prominent institutions or exhibition spaces within the Republic of Croatia. Artworks displayed outside prominent institutions and exhibition spaces are recognized if they contribute to Croatian culture and art."
+            "content": "Professional Criteria Criteria by which HDLU Varaždin provides recommendations and support to its members for obtaining the status of independent artists or for measures to promote cultural and artistic creativity. \n\nThese professional criteria are agreed upon with the Ministry of Culture and Media, and members use them to prove that they professionally engage in artistic activities. \n\nPainter \n\na) 3 solo exhibitions \nb) 5 group juried exhibitions or \nc) 2 solo exhibitions and 2 group juried exhibitions. \n\nMultimedia Artist \n\na) 3 solo multimedia projects \nb) 5 group multimedia projects, \nc) 2 solo and 2 group multimedia projects or \nd) 5 group juried exhibitions. \n\nA multimedia project includes video, film, computer art, performance, and other forms of contemporary artistic expression. \n\nSculptor \n\na) 3 solo exhibitions \nb) 5 group juried exhibitions \nc) 1 solo exhibition and 4 group juried exhibitions or \nd) 2 solo exhibitions and 2 group juried exhibitions. \n\nExhibitions are recognized if different artworks are displayed. \nExhibitions are recognized if held in prominent institutions or exhibition spaces within the Republic of Croatia. \nArtworks displayed outside prominent institutions and exhibition spaces are recognized if they contribute to Croatian culture and art."
         }
     },
     "file": [

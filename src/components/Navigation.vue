@@ -27,11 +27,11 @@
                     />
                 </div>
                 <div class="pagesNav row">
-                    <router-link to="/">{{ $t("home") }}</router-link>
-                    <router-link to="/organization">{{ $t("org") }}</router-link>
-                    <router-link to="/members">{{ $t("members") }}</router-link>
-                    <router-link to="/archive">{{ $t("archive") }}</router-link>
-                    <a href="#contact">{{ $t("contact") }}</a>
+                    <router-link to="/" @click="isMenuOpen = false">{{ $t("home") }}</router-link>
+                    <router-link to="/organization" @click="isMenuOpen = false">{{ $t("org") }}</router-link>
+                    <router-link to="/members" @click="isMenuOpen = false">{{ $t("members") }}</router-link>
+                    <router-link to="/archive" @click="isMenuOpen = false">{{ $t("archive") }}</router-link>
+                    <a href="#contact" @click="isMenuOpen = false">{{ $t("contact") }}</a>
                 </div>
             </div>
         </div>

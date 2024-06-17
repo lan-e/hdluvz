@@ -30,11 +30,19 @@
 
     iframe {
         width: 100%;
+        width: 100%;
+
         //min-width: 300px;
 
         @media #{$mobile} {
             height: 150px;
             width: 150px;
+        }
+
+        @media #{$mobile2} {
+            height: 100px;
+            width: 100vw;
+            padding: 0 10px;
         }
     }
 
@@ -48,6 +56,10 @@
             padding: 0;
             gap: 10px;
             flex-direction: row;
+        }
+
+        @media #{$mobile2} {
+            flex-wrap: wrap;
         }
 
         > div {
@@ -64,15 +76,26 @@
             }
         }
 
+        > .col {
+            @media #{$mobile2} {
+                max-width: calc(50vw - 30px);
+            }
+        }
+
         > .info {
             display: flex;
             flex-direction: column;
+
             gap: 24px;
 
             @media #{$mobile} {
                 text-align: left;
                 font-size: 9px;
                 gap: 8px;
+            }
+
+            @media #{$mobile2} {
+                max-width: calc(50vw - 30px);
             }
 
             .numbers {
