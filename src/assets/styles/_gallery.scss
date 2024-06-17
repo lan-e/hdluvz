@@ -3,6 +3,11 @@
     padding: 0 15%;
     margin-bottom: 125px;
 
+    @media #{$mobile} {
+        padding: 0 10px;
+        margin-bottom: 100px;
+    }
+
     /* &::after {
         content: "";
         display: block;
@@ -20,11 +25,17 @@
         margin-top: 48px;
 
         @media #{$mobile} {
-            margin: 0 5%;
+            margin: 0;
+            gap: 10px;
+            grid-row-gap: 60px;
         }
 
         > .event {
             width: calc(33% - 13px);
+
+            @media #{$mobile} {
+                width: calc(50% - 5px);
+            }
         }
 
         img {
@@ -34,7 +45,8 @@
 
             @media #{$mobile} {
                 margin: 0;
-                width: 200px;
+                max-height: 100%;
+                max-width: 100%;
             }
         }
 
@@ -42,12 +54,23 @@
             color: var(--color3);
             font-size: 24px;
             margin: 5px 0;
+
+            @media #{$mobile} {
+                text-align: left;
+                font-size: 14px;
+            }
         }
 
         h4 {
             color: var(--color3);
             font-size: 14px;
             margin: 5px 0;
+
+            @media #{$mobile} {
+                margin: 0;
+                text-align: left;
+                font-size: 10px;
+            }
         }
     }
 }

@@ -9,24 +9,20 @@
 </template>
 
 <style scoped>
+span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 30px;
+}
+
 svg {
-    position: fixed;
-    top: 20px;
-    right: 24px;
     width: 18px;
-    height: auto;
 
     cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
-    svg {
-        top: 14px;
-        right: 10px;
-    }
-}
-
 svg path {
-    fill: white;
+    fill: var(--color3);
 }
 </style>

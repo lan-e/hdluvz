@@ -20,6 +20,12 @@
 
     transition: 0.3s top ease-in-out;
 
+    @media #{$mobile} {
+        height: 50px;
+        padding: 10px;
+        box-shadow: 0px -14px 20px black;
+    }
+
     > .left {
         height: 100%;
         display: flex;
@@ -27,18 +33,41 @@
         justify-content: flex-end;
         flex-direction: column;
 
+        @media #{$mobile} {
+            gap: 10px;
+            flex-direction: row;
+            align-items: center;
+        }
+
         > h3 {
             margin: 0;
             font-weight: 500;
             font-size: 16px;
 
             @media #{$mobile} {
-                font-size: 12px;
+                font-size: 9px;
+                width: 100px;
+                text-align: left;
+                text-transform: uppercase;
+                font-weight: 100;
+            }
+        }
+
+        > div > a {
+            @media #{$mobile} {
+                height: max-content;
+                display: block;
             }
         }
 
         > div > a > img {
             height: 115px;
+
+            @media #{$mobile} {
+                width: 68px;
+                height: auto;
+                display: block;
+            }
         }
     }
 
@@ -52,6 +81,16 @@
 
         > .row {
             align-items: center;
+
+            @media #{$mobile} {
+                height: 100%;
+            }
+
+            > .nav-options {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
         }
 
         > .pagesNav {
@@ -60,6 +99,10 @@
             height: 24px;
 
             margin-bottom: -1px;
+
+            @media #{$mobile} {
+                display: none;
+            }
 
             > a {
                 font-weight: 500;
@@ -88,13 +131,18 @@
         top: -140px;
         padding: 20px 15%;
 
+        @media #{$mobile} {
+            top: 0;
+            padding: 10px;
+        }
+
         h3 {
             padding-top: 32px;
-        }
-    }
 
-    @media #{$mobile} {
-        display: none;
+            @media #{$mobile} {
+                padding-top: 0px;
+            }
+        }
     }
 }
 
@@ -121,6 +169,14 @@
 
     @media #{$mobile} {
         display: flex;
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    strong {
+        @media #{$mobile} {
+            font-size: 14px;
+        }
     }
 
     &.slideRight {
@@ -136,9 +192,47 @@
         }
     }
 
+    .menu-top {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .menu-bottom {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
     img {
         width: 70%;
         height: auto;
+
+        @media #{$mobile} {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    .pagesNav {
+        padding: 0 15px;
+        font-size: 20px;
+
+        > a {
+            background: transparent;
+            color: var(--color3);
+            opacity: 0.4;
+            text-decoration: none;
+            text-align: left;
+            //margin-bottom: 8px;
+        }
+
+        > a.router-link-exact-active {
+            color: var(--color3);
+            opacity: 1;
+        }
     }
 
     .menuBtn {
@@ -168,6 +262,10 @@
         color: var(--color3);
         opacity: 0.4;
         cursor: pointer;
+
+        @media #{$mobile} {
+            font-size: 14px;
+        }
 
         &:hover {
             color: var(--color2);

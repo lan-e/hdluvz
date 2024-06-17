@@ -14,9 +14,17 @@
             </div>
             <div class="right">
                 <div class="row">
-                    <LanguageSwitcher />
-                    <span>&nbsp;|&nbsp;</span>
-                    <ThemeIcon :switchedTheme="switchedTheme" @click="switchTheme" />
+                    <div class="nav-options" :style="{ display: this.$myGlobalVariable.windowWidth > this.$myGlobalVariable.mobileWindowWidth ? '' : 'none' }">
+                        <LanguageSwitcher />
+                        <span>&nbsp;|&nbsp;</span>
+                        <ThemeIcon :switchedTheme="switchedTheme" @click="switchTheme" />
+                    </div>
+                    <Menu
+                        @click="isMenuOpen = !isMenuOpen"
+                        isMenuBtn="true"
+                        :isMenuOpen="isMenuOpen"
+                        :style="{ display: this.$myGlobalVariable.windowWidth < this.$myGlobalVariable.mobileWindowWidth ? '' : 'none' }"
+                    />
                 </div>
                 <div class="pagesNav row">
                     <router-link to="/">{{ $t("home") }}</router-link>
@@ -28,8 +36,11 @@
             </div>
         </div>
         <div class="navigationRight" :class="{ slideRight: isMenuOpen }">
-            <Button @click="isMenuOpen = !isMenuOpen" isMenuBtn="true" :isMenuOpen="isMenuOpen" />
-            <Logo />
+            <!-- <Button @click="isMenuOpen = !isMenuOpen" isMenuBtn="true" :isMenuOpen="isMenuOpen" /> -->
+            <div class="menu-top">
+                <CloseMenu @click="isMenuOpen = !isMenuOpen" :isMenuOpen="isMenuOpen" />
+                <Logo />
+            </div>
             <div class="pagesNav col">
                 <router-link to="/">{{ $t("home") }}</router-link>
                 <router-link to="/organization">{{ $t("org") }}</router-link>
@@ -37,8 +48,11 @@
                 <router-link to="/archive">{{ $t("archive") }}</router-link>
                 <a href="#contact">{{ $t("contact") }}</a>
             </div>
-            <LanguageSwitcher />
-            <ThemeIcon :switchedTheme="switchedTheme" @click="switchTheme" />
+            <div class="menu-bottom">
+                <LanguageSwitcher />
+                <span>&nbsp;|&nbsp;</span>
+                <ThemeIcon :switchedTheme="switchedTheme" @click="switchTheme" />
+            </div>
         </div>
     </nav>
 </template>
@@ -48,6 +62,8 @@ import Button from "./icons/Button.vue";
 import ThemeIcon from "./lang-theme/ThemeIcon.vue";
 import LanguageSwitcher from "./lang-theme/LanguageSwitcher.vue";
 import Logo from "./icons/Logo.vue";
+import Menu from "./icons/Menu.vue";
+import CloseMenu from "./icons/CloseMenu.vue";
 
 export default {
     components: {
@@ -55,6 +71,8 @@ export default {
         ThemeIcon,
         LanguageSwitcher,
         Logo,
+        Menu,
+        CloseMenu,
     },
     data() {
         return {
