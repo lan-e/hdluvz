@@ -364,7 +364,7 @@ a {
 }
 @media (max-width: 900px) {
   .home {
-    margin-top: 0px;
+    margin-top: 50px;
   }
 }
 .home > h1 {
@@ -425,6 +425,7 @@ a {
   cursor: pointer;
 }
 .home > .heroimg .title .left {
+  top: 125px;
   left: 15%;
   position: absolute;
   opacity: 0.3;
@@ -438,6 +439,7 @@ a {
   font-weight: 500;
 }
 .home > .heroimg .title .right {
+  top: 125px;
   right: 15%;
   position: absolute;
   opacity: 0.3;
@@ -452,6 +454,11 @@ a {
 }
 .home > .heroimg .title .active {
   opacity: 0.6;
+}
+@media (max-width: 900px) {
+  .home > .heroimg .title .active {
+    font-weight: 500;
+  }
 }
 .home > .heroimg h4 {
   font-weight: 100;
@@ -483,7 +490,7 @@ a {
   .home > .heroimg .overlayText {
     padding: 10px;
     width: 100%;
-    font-size: 10px;
+    font-size: 16px;
     position: relative;
   }
 }
@@ -499,6 +506,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 10px;
+    padding-top: 70px;
   }
 }
 .eventDetails > .eventDetailsContainer {
@@ -509,6 +518,12 @@ a {
   grid-template-rows: auto;
   grid-template-areas: "left-side right-side" "bottom-side bottom-side";
   color: var(--color2);
+}
+@media (max-width: 900px) {
+  .eventDetails > .eventDetailsContainer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "left-side" "right-side" "bottom-side";
+  }
 }
 .eventDetails > .eventDetailsContainer > .grid-left-side {
   grid-area: left-side;
@@ -537,6 +552,11 @@ a {
   width: 100%;
   padding: 75px 0 0 0;
 }
+@media (max-width: 900px) {
+  .eventDetails > .eventDetailsContainer > .grid-bottom-side {
+    padding-top: 20px;
+  }
+}
 .eventDetails > .eventDetailsContainer > .grid-bottom-side > .event-gallery-container {
   width: 100%;
   height: -moz-max-content;
@@ -550,6 +570,11 @@ a {
 .eventDetails > .eventDetailsContainer > .grid-bottom-side > .event-gallery-container > .gallery-image {
   width: calc(20% - 12.5px);
   height: 100%;
+}
+@media (max-width: 900px) {
+  .eventDetails > .eventDetailsContainer > .grid-bottom-side > .event-gallery-container > .gallery-image {
+    width: calc(50% - 10px);
+  }
 }
 .eventDetails > .eventDetailsContainer > .grid-bottom-side > .event-gallery-container > .gallery-image > img {
   -o-object-fit: cover;
@@ -570,6 +595,11 @@ a {
   width: 100%;
   margin-top: 0;
 }
+@media (max-width: 900px) {
+  .eventDetails .title {
+    margin-bottom: 10px;
+  }
+}
 .eventDetails .date {
   text-align: left;
   font-weight: 500;
@@ -586,7 +616,8 @@ a {
 }
 @media (max-width: 900px) {
   .eventDetails .desc {
-    max-width: 80%;
+    padding: 0;
+    width: 100%;
   }
 }
 .eventDetails .imgContainer {
@@ -745,6 +776,7 @@ a {
 .about-container .about .title {
   width: 100%;
   margin-top: 0;
+  color: var(--color3);
 }
 @media (max-width: 900px) {
   .about-container .about .title {
@@ -874,14 +906,14 @@ a {
   text-align: left;
   position: relative;
   min-height: 100vh;
+  /* &::after {
+      content: "";
+      display: block;
+      height: 498px;
+  } */
 }
 .page h1 {
   text-align: left;
-}
-.page::after {
-  content: "";
-  display: block;
-  height: 498px;
 }
 .page a {
   color: var(--color3);
@@ -900,7 +932,7 @@ a {
 }
 @media (max-width: 900px) {
   .organization-container {
-    padding: 24px 12vw;
+    padding: 0 10px;
   }
 }
 .organization-container h1 {
