@@ -177,6 +177,7 @@ a {
 }
 .navigation > .left > div > a > img {
   height: 100%;
+  max-height: 120px;
 }
 @media (max-width: 930px) {
   .navigation > .left > div > a > img {
@@ -236,7 +237,8 @@ a {
 }
 .navigation.navbar-scrolled {
   top: -140px;
-  padding: 20px 15%;
+  padding-bottom: 20px;
+  /* +padding: 20px 15%; */
 }
 @media (max-width: 930px) {
   .navigation.navbar-scrolled {

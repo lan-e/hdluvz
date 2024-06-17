@@ -11,17 +11,27 @@
     </div>
 </template>
 
-<script setup>
-import i18next from "i18next";
+<script>
+import i18next, { changeLanguage } from "i18next";
 
-const languages = {
-    en: { nativeName: "English" },
-    hr: { nativeName: "Hrvatski" },
+export default {
+    data() {
+        return {
+            languages: {
+                en: { nativeName: "English" },
+                hr: { nativeName: "Hrvatski" },
+            },
+        };
+    },
+    methods: {
+        changeLanguage(lng) {
+            i18next.changeLanguage(lng);
+            localStorage.setItem("i18nextLng", lng);
+            window.dispatchEvent(new Event("languageChange"));
+        },
+    },
+    beforeMount() {
+        changeLanguage("en");
+    },
 };
-
-function changeLanguage(lng) {
-    i18next.changeLanguage(lng);
-    localStorage.setItem("i18nextLng", lng);
-    window.dispatchEvent(new Event("languageChange"));
-}
 </script>
