@@ -425,13 +425,13 @@ a {
   cursor: pointer;
 }
 .home > .heroimg .title .left {
-  top: 125px;
   left: 15%;
   position: absolute;
   opacity: 0.3;
 }
 @media (max-width: 900px) {
   .home > .heroimg .title .left {
+    top: 125px;
     left: 10px;
   }
 }
@@ -439,13 +439,13 @@ a {
   font-weight: 500;
 }
 .home > .heroimg .title .right {
-  top: 125px;
   right: 15%;
   position: absolute;
   opacity: 0.3;
 }
 @media (max-width: 900px) {
   .home > .heroimg .title .right {
+    top: 125px;
     right: 10px;
   }
 }

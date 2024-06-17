@@ -6,7 +6,7 @@ import hrTranslations from "./lang/hr.json";
 
 i18next.use(LanguageDetector).init({
     debug: true,
-    fallbackLng: "en",
+    fallbackLng: "hr",
     resources: {
         en: {
             translation: enTranslations,

@@ -66,12 +66,12 @@
             cursor: pointer;
 
             & .left {
-                top: 125px;
                 left: 15%;
                 position: absolute;
                 opacity: 0.3;
 
                 @media #{$mobile} {
+                    top: 125px;
                     left: 10px;
                 }
             }
@@ -81,12 +81,12 @@
             }
 
             & .right {
-                top: 125px;
                 right: 15%;
                 position: absolute;
                 opacity: 0.3;
 
                 @media #{$mobile} {
+                    top: 125px;
                     right: 10px;
                 }
             }
