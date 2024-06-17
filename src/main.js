@@ -9,7 +9,7 @@ const app = createApp(App);
 
 app.config.globalProperties.$myGlobalVariable = reactive({
     windowWidth: null,
-    mobileWindowWidth: 900,
+    mobileWindowWidth: 930,
 });
 
 app.use(router).use(i18n).mount("#app");

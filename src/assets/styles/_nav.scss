@@ -28,6 +28,7 @@
 
     > .left {
         height: 100%;
+        max-width: 50%;
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
@@ -53,6 +54,14 @@
             }
         }
 
+        > div {
+            max-height: calc(100% - 20px);
+
+            @media #{$mobile} {
+                max-height: 68px;
+            }
+        }
+
         > div > a {
             @media #{$mobile} {
                 height: max-content;
@@ -61,7 +70,7 @@
         }
 
         > div > a > img {
-            height: 115px;
+            height: 100%;
 
             @media #{$mobile} {
                 width: 68px;
