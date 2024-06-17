@@ -11,7 +11,14 @@
                     <h4>{{ event.value.acf.from_to }}</h4>
                 </router-link>
             </div> -->
-            <div v-for="event in filteredEvents" :key="event.id" class="event">
+            <!-- <div v-for="event in filteredEvents" :key="event.id" class="event">
+                <router-link :to="{ name: 'EventDetails', params: { id: event.id } }">
+                    <img :src="getImageSrc(event.image)" alt="" />
+                    <h3>{{ event.title }}</h3>
+                    <h4>{{ event.date }}</h4>
+                </router-link>
+            </div> -->
+            <div v-for="event in events" :key="event.id" class="event">
                 <router-link :to="{ name: 'EventDetails', params: { id: event.id } }">
                     <img :src="getImageSrc(event.image)" alt="" />
                     <h3>{{ event.title }}</h3>
@@ -45,8 +52,8 @@ export default {
                 return this.events.filter((event) => event.value.link.includes("/hdlu/event"));
             }
         }, */
-        filteredEvents() {
-            const events = [
+        /* filteredEvents() {
+            const events2 = [
                 {
                     id: 1,
                     title: this.$t("event.event1.title"),
@@ -97,7 +104,7 @@ export default {
                 },
             ];
             return events;
-        },
+        }, */
     },
     methods: {
         /* async fetchData() {
@@ -106,6 +113,12 @@ export default {
             this.events = response.map((resp) => ({ value: resp }));
             this.isLoaded = true;
         }, */
+        fetchData() {
+            var data = require(`@/lang/${this.currentLanguage}`);
+            this.events = data.event;
+
+            this.isLoaded = true;
+        },
         onLanguageChange() {
             this.currentLanguage = localStorage.getItem("i18nextLng");
         },
@@ -114,7 +127,7 @@ export default {
         },
     },
     mounted() {
-        /* this.fetchData(); */
+        this.fetchData();
         window.addEventListener("languageChange", this.onLanguageChange);
     },
     beforeUnmount() {

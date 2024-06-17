@@ -17,17 +17,18 @@
                 <div class="grid-right-side">
                     <!-- <img class="imgContainer" :src="event.acf?.image" alt="Event Image" /> -->
 
-                    <img class="imgContainer" :src="getImageSrc(filteredEvent.image)" alt="Event Image" />
+                    <img class="imgContainer" :src="getImageSrc(filteredEvent.image)" alt="Event Image" @click="loadImageModal(filteredEvent.image)" />
                 </div>
                 <div class="grid-bottom-side">
                     <div class="event-gallery-container">
-                        <div v-for="image in filteredEvent.gallery" class="gallery-image">
+                        <div v-for="image in filteredEvent.gallery" @click="loadImageModal(image.url)" class="gallery-image">
                             <img :src="getImageSrc(image.url)" alt="Gallery Image" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <ImageModal v-if="showModal" :image="imageModal" @closeModal="showModal = false" />
         <div id="contact">
             <Footer />
         </div>
@@ -37,11 +38,13 @@
 <script>
 import Loader from "@/components/icons/Loader.vue";
 import Footer from "@/components/Footer.vue";
+import ImageModal from "@/components/ImageModal.vue";
 
 export default {
     components: {
         Loader,
         Footer,
+        ImageModal,
     },
     data() {
         return {
@@ -50,10 +53,12 @@ export default {
             currentLanguage: localStorage.getItem("i18nextLng"),
             filteredEvent: null,
             refresh: 0,
+            showModal: false,
+            imageModal: null,
         };
     },
     computed: {
-        filteredEvents() {
+        /* filteredEvents() {
             this.refresh;
             const events = [
                 {
@@ -154,25 +159,42 @@ export default {
                 },
             ];
             return events;
-        },
+        }, */
     },
     methods: {
-        filterEvent() {
+        fetchData() {
+            var data = require(`@/lang/${this.currentLanguage}`);
+            this.events = data.event;
+
+            this.filterEvent();
+        },
+        /* filterEvent() {
             this.refresh++;
             const eventId = parseInt(this.$route.params.id, 10);
             this.filteredEvent = this.filteredEvents.find((event) => event.id === eventId);
+            this.isLoaded = true;
+        }, */
+        filterEvent() {
+            this.refresh++;
+            const eventId = parseInt(this.$route.params.id, 10);
+            this.filteredEvent = this.events.find((event) => event.id === eventId);
             this.isLoaded = true;
         },
         getImageSrc(image) {
             return require(`@/assets/img/events/${image}`);
         },
+        loadImageModal(image) {
+            this.imageModal = this.getImageSrc(image);
+            this.showModal = true;
+        },
         onLanguageChange() {
             this.currentLanguage = localStorage.getItem("i18nextLng");
-            this.filterEvent();
+            this.fetchData();
         },
     },
     beforeMount() {
-        this.filterEvent();
+        this.fetchData();
+        /* this.filterEvent(); */
     },
     mounted() {
         window.addEventListener("languageChange", this.onLanguageChange);

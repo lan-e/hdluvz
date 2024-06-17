@@ -28,7 +28,7 @@
                     <h4 v-if="currentLanguage == 'en'">Artists</h4>
                     <h4 v-else>Umjetnici</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'umjetnici'">
+                        <div v-if="member.title.toLowerCase() === 'umjetnici' || member.title.toLowerCase() === 'artists'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                     <h4 v-if="currentLanguage == 'en'">Curator team</h4>
                     <h4 v-else>Kustoski tim</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'kustoski tim'">
+                        <div v-if="member.title.toLowerCase() === 'kustoski tim' || member.title.toLowerCase() === 'curator team'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -82,6 +82,7 @@ export default {
         },
         onLanguageChange() {
             this.currentLanguage = localStorage.getItem("i18nextLng");
+            this.fetchData();
         },
     },
     mounted() {

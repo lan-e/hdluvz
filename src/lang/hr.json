@@ -14,7 +14,7 @@
     "all": "Sve izložbe",
     "logoName": "Hrvatsko društvo likovnih umjetnika Varaždin",
     "allRights": "Sva prava pridržana.",
-    "event": {
+    "event2": {
         "event1": {
             "title": "Honeymoon",
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
@@ -40,6 +40,104 @@
             "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat."
         }
     },
+    "event": [
+        {
+            "id": 1,
+            "title": "Honeymoon",
+            "author": "Maja Vrban Sačić",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat.",
+            "date": "21.07 - 09.08.2020.",
+            "image": "honeymoon.jpg",
+            "gallery": [
+                { "id": 1, "url": "exh.jpg" },
+                { "id": 2, "url": "exh.jpg" },
+                { "id": 3, "url": "exh.jpg" },
+                { "id": 4, "url": "exh.jpg" },
+                { "id": 5, "url": "exh.jpg" },
+                { "id": 6, "url": "exh.jpg" },
+                { "id": 7, "url": "exh.jpg" },
+                { "id": 8, "url": "exh.jpg" },
+                { "id": 9, "url": "exh.jpg" },
+                { "id": 10, "url": "exh.jpg" }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Nastajanje u nestajanju",
+            "author": "Dražen Eisenbeisser",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat.",
+            "date": "09.03. - 23.03.2021.",
+            "image": "nastajanje-u-nestajanju.jpg",
+            "gallery": [
+                { "id": 1, "url": "exh.jpg" },
+                { "id": 2, "url": "exh.jpg" },
+                { "id": 3, "url": "exh.jpg" },
+                { "id": 4, "url": "exh.jpg" },
+                { "id": 5, "url": "exh.jpg" },
+                { "id": 6, "url": "exh.jpg" },
+                { "id": 7, "url": "exh.jpg" },
+                { "id": 8, "url": "exh.jpg" }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Srastanje i prožimanje",
+            "author": "Andrija Većenaj / Lucija Berdin",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat.",
+            "date": "23.06. - 17.07.2020.",
+            "image": "srastanje-i-prozimanje.jpg",
+            "gallery": [
+                { "id": 1, "url": "exh.jpg" },
+                { "id": 2, "url": "exh.jpg" },
+                { "id": 3, "url": "exh.jpg" }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "List do lista",
+            "author": "Dina Zebec",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat.",
+            "date": "13.10. - 06.11.2020.",
+            "image": "list-do-lista.jpg",
+            "gallery": [
+                { "id": 1, "url": "exh.jpg" },
+                { "id": 2, "url": "exh.jpg" },
+                { "id": 3, "url": "exh.jpg" },
+                { "id": 4, "url": "exh.jpg" },
+                { "id": 5, "url": "exh.jpg" },
+                { "id": 6, "url": "exh.jpg" }
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Moji",
+            "author": "Rusa Trajkova",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat.",
+            "date": "25.02. - 13.03.2020.",
+            "image": "moji.jpg",
+            "gallery": [
+                { "id": 1, "url": "exh.jpg" },
+                { "id": 2, "url": "exh.jpg" },
+                { "id": 3, "url": "exh.jpg" },
+                { "id": 4, "url": "exh.jpg" },
+                { "id": 5, "url": "exh.jpg" },
+                { "id": 6, "url": "exh.jpg" },
+                { "id": 7, "url": "exh.jpg" },
+                { "id": 8, "url": "exh.jpg" },
+                { "id": 9, "url": "exh.jpg" },
+                { "id": 10, "url": "exh.jpg" }
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Život jedne slike",
+            "author": "Jasmina Jakopanec",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nulla lacus, vehicula at tincidunt at, dictum ac nisl. Vivamus enim augue, tempus eget mi nec, ullamcorper aliquam sem. Duis imperdiet libero et varius pulvinar. Praesent leo eros, sodales at elit nec, feugiat laoreet magna. Mauris eu quam libero. Vivamus nibh justo, congue vitae arcu tincidunt, tincidunt iaculis diam. Sed sagittis dictum sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisi. In imperdiet ligula ac iaculis dapibus. Phasellus sed aliquam urna, vel vehicula magna. Sed a ipsum tempor, dapibus libero a, molestie ante. Vivamus consequat auctor lacus sit amet molestie. Nunc dictum leo et pharetra varius. Suspendisse et hendrerit risus. Phasellus sit amet efficitur odio, sit amet congue arcu. In finibus, velit ut euismod hendrerit, lectus metus varius arcu, ac ullamcorper odio ligula a risus. Nunc in finibus mauris. Phasellus purus mauris, mattis eu mauris eget, malesuada ornare tortor. Aliquam imperdiet quis quam vitae fermentum. Cras mattis hendrerit dolor, eget blandit dui condimentum sed. Vestibulum luctus dapibus accumsan. Nam pellentesque velit a purus viverra dictum. Donec a eros maximus, dapibus ante a, porttitor tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla pretium dui orci, sit amet varius leo accumsan vel. Phasellus ultrices, velit quis lobortis laoreet, lorem leo lobortis est, vel mattis erat mauris maximus nulla. Sed ullamcorper, ligula at gravida tempus, odio velit dapibus orci, id commodo tellus orci sit amet turpis. Donec felis sem, vehicula pellentesque erat in, mattis venenatis dolor. Aenean hendrerit sed massa at pretium. Nullam egestas, quam at malesuada faucibus, nunc orci pharetra ante, in accumsan sem sem eu ipsum. Aenean scelerisque non nisi eu volutpat. Donec mollis ac tellus eget interdum. Pellentesque maximus quam massa, quis tristique dui tempus ut. Morbi vitae erat tincidunt, molestie diam ac, feugiat purus. Donec in ligula iaculis, porttitor ipsum vel, condimentum augue. Phasellus eleifend ornare placerat.",
+            "date": "26.03. - 09.04.2021.",
+            "image": "zivot-jedne-slike.jpg",
+            "gallery": [{ "id": 1, "url": "exh.jpg" }]
+        }
+    ],
     "member": [
         { "name": "Davor Petak", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
         { "name": "Dražen Pavlović", "title": "kustoski tim", "portfolio": "https://www.unin.hr/" },
@@ -98,11 +196,11 @@
             "title": "Nekad",
             "content": "Galerijski prostor u nekoj sredini pruža mogućnost uvida u aktualna događanja u likovnoj umjetnosti, a samim tim i nastajanje umjetnika. HDLU Varaždin je rijetka strukovna udruga kod nas, koja još uvijek nema svoj izložbeni prostor i kao predvodnik suvremenosti ne može u pravoj mjeri pokazati aktivnost svojih članova, niti svjetski trend."
         },
-        "about-us": {
+        "aboutUs": {
             "title": "O nama",
             "content": "Svaka poslovno sposobna osoba koja ispunjava kriterije Statuta može postati član HDLU Varaždin. Statut predviđa i povremeno članstvo za one koji sudjeluju u realizaciji programa i pomažu radu udruge. Članovi HDLU Varaždin, većinom umjetnici s formalnim obrazovanjem, rade na razvoju i promociji suvremene likovne umjetnosti i kulture. Manji dio članova nema formalno obrazovanje, ali ima značajan umjetnički rad i profesionalne kritike. Galerija HDLU Varaždin, smještena u Kuli stražarnici Starog grada u Varaždinu, organizira izložbe članova i gostujućih umjetnika, privlačeći mnoge posjetitelje, uključujući turiste. Raznolik profil posjetitelja pokazuje važnost suvremenog likovnog stvaralaštva za kulturu grada. HDLU Varaždin poziva donatore da podrže razvoj likovne umjetnosti. Udruga nudi medijsku vidljivost, marketinške aktivnosti ili umjetnička djela kao nadoknadu. HDLU Varaždin surađuje s gospodarskim subjektima i pojedincima, nudeći usluge kao što su kupnja umjetničkih djela s certifikatom, vizualni identitet, savjeti za uređenje prostora i valorizacija umjetničkih djela."
         },
-        "professional-criteria": {
+        "professionalCriteria": {
             "title": "Stručni kriteriji",
             "content": "Stručni kriteriji prema kojima HDLU Varaždin daje preporuke i potporu svojim članovima kod ostvarivanja pravazsamostalnih umjetnika ili kod mjera za poticanje kulturnog i umjetničkog stvaralaštva. Stručni kriteriji usuglašeni su s Ministarstvom kulture i medija i njima članovi dokazuju da profesionalno obavljaju umjetničku djelatnost. Slikar a) 3 samostalne izložbe b) 5 skupnih žiriranih izložbi ili c) 2 samostalne izložbe i 2 skupne žirirane izložbe. Multimedijalni umjetnik a) 3 samostalna multimedijalna projekt b) 5 skupnih multimedijalnih projekata c) 2 samostalna i 2 skupna multimedijalna projekta ili d) 5 skupnih žiriranih izložbi. Pod multimedijalnim projektom podrazumijeva se video, film, računalna umjetnost, performans i drugi oblici suvremenog umjetničkog izražavanja. Kipar a) 3 samostalne izložba b) 5 skupnih žiriranih izložbi c) 1 samostalna izložba i 4 skupne žirirane izložbe ili d) 2 samostalne izložbe i 2 skupne žirirane izložbe. Izložbe se priznaju ako su izlagana različita umjetnička djela. Izložbe se priznaju ako su realizirane u istaknutim institucijama ili izložbenim prostorima na području Republike Hrvatske. Umjetnička djela ostvarena izvan istaknutih institucija i izložbenih prostora priznaju se ako predstavljaju doprinos hrvatskoj kulturi i umjetnosti."
         }

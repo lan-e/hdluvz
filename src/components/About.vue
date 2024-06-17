@@ -7,22 +7,33 @@
                     <h2 class="title" v-html="post.value.title.rendered"></h2>
                     <div v-html="post.value.content.rendered"></div>
                 </div> -->
-                <h2 class="title">{{ $t("posts.about-us.title") }}</h2>
-                <div>{{ $t("posts.about-us.content") }}</div>
+                <h2 class="title">{{ $t("posts.aboutUs.title") }}</h2>
+                <div>{{ $t("posts.aboutUs.content") }}</div>
             </div>
             <div class="grid-right-side">
-                <img src="@/assets/img/about2.png" alt="" />
+                <img src="@/assets/img/about2.png" @click="loadImageModal('about2.png')" alt="" />
             </div>
+        </div>
+        <ImageModal v-if="showModal" :image="imageModal" @closeModal="showModal = false" />
+        <div id="contact">
+            <Footer />
         </div>
     </div>
 </template>
 
 <script>
+import ImageModal from "@/components/ImageModal.vue";
+
 export default {
+    components: {
+        ImageModal,
+    },
     data() {
         return {
             posts: [],
             currentLanguage: localStorage.getItem("i18nextLng"),
+            showModal: false,
+            imageModal: null,
         };
     },
     computed: {
@@ -43,6 +54,13 @@ export default {
         }, */
         onLanguageChange() {
             this.currentLanguage = localStorage.getItem("i18nextLng");
+        },
+        getImageSrc(image) {
+            return require(`@/assets/img/${image}`);
+        },
+        loadImageModal(image) {
+            this.imageModal = this.getImageSrc(image);
+            this.showModal = true;
         },
     },
     mounted() {

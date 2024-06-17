@@ -71,7 +71,7 @@
                     <h4 v-if="currentLanguage == 'en'">Honorable Court</h4>
                     <h4 v-else>Časni sud</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'časni sud'">
+                        <div v-if="member.title.toLowerCase() === 'časni sud' || member.title.toLowerCase() === 'honorable court'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                     <h4 v-if="currentLanguage == 'en'">Board of directors</h4>
                     <h4 v-else>Upravni odbor</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'upravni odbor'">
+                        <div v-if="member.title.toLowerCase() === 'upravni odbor' || member.title.toLowerCase() === 'board of directors'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                     <h4 v-if="currentLanguage == 'en'">Artistic advice</h4>
                     <h4 v-else>Umjetnički savjet</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'umjetnički savjet'">
+                        <div v-if="member.title.toLowerCase() === 'umjetnički savjet' || member.title.toLowerCase() === 'artistic advice'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                     <h4 v-if="currentLanguage == 'en'">Supervisory board</h4>
                     <h4 v-else>Nadzorni odbor</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'nadzorni odbor'">
+                        <div v-if="member.title.toLowerCase() === 'nadzorni odbor' || member.title.toLowerCase() === 'supervisory board'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                     <h4 v-if="currentLanguage == 'en'">Commission for artistic performances</h4>
                     <h4 v-else>Komisija za likovne priredbe</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'komisija za likovne priredbe'">
+                        <div v-if="member.title.toLowerCase() === 'komisija za likovne priredbe' || member.title.toLowerCase() === 'commission for artistic performances'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -121,7 +121,7 @@
                     <h4 v-if="currentLanguage == 'en'">Program manager</h4>
                     <h4 v-else>Programski voditelj</h4>
                     <div v-for="member in members" :key="member.name + '-' + member.title" class="members">
-                        <div v-if="member.title.toLowerCase() === 'programski voditelj'">
+                        <div v-if="member.title.toLowerCase() === 'programski voditelj' || member.title.toLowerCase() === 'program manager'">
                             <a :href="member.portfolio"> {{ member.name }}</a>
                         </div>
                     </div>
@@ -166,6 +166,7 @@ export default {
         },
         onLanguageChange() {
             this.currentLanguage = localStorage.getItem("i18nextLng");
+            this.fetchData();
         },
     },
     mounted() {
